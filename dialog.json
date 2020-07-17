@@ -1,0 +1,1101 @@
+[
+    {
+        "Step": "maaf",
+        "Index": 1,
+        "Dialog": "Maaf, {bot_name} belum bisa mengerti yang Kamu maksud nih.",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "entitasNama",
+        "Index": 1,
+        "Dialog": "Hi there, aku {bot_name}. Seneng deh akhirnya kita bisa ngobrol di sini. Eh iya, nama panggilan kamu siapa ?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "mulaiBerinvestasi_entitasSyaratDanKetentuan",
+        "Index": 1,
+        "Dialog": "Dengan mulai simulasinya, artinya udah menyetujui syarat dan ketentuan yang berlaku ya. Setuju nggak nih,?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiSyaratKetentuan",
+        "Index": 1,
+        "Dialog": "Dengan mulai simulasinya@COMMA@ artinya udah menyetujui syarat dan ketentuan yang berlaku ya. Setuju nggak nih@COMMA@?",
+        "Action": "QR",
+        "Map": "Setuju,Setuju#Tidak Setuju,Batal"
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiSyaratKetentuan",
+        "Index": 2,
+        "Dialog": "Sini aku bantuin buat milih investasi yang sesuai dengan karakter dan kebutuhan kamu. Tapi kamu jawab ya beberapa pertanyaan dari aku dulu ya.  &split& Berapa umur kamu sekarang?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiSyaratKetentuan",
+        "Index": 3,
+        "Dialog": "Sebelumnya, ada T&C nya dulu ya...",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "mulaiBerinvestasi_entitasUmur",
+        "Index": 1,
+        "Dialog": "Sini aku bantuin buat milih investasi yang sesuai dengan karakter dan kebutuhan kamu. Tapi kamu jawab ya beberapa pertanyaan dari aku dulu ya.  &split& Berapa umur kamu sekarang?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiUmur",
+        "Index": 1,
+        "Dialog": "Wow! Keren juga ya kamu. Masih muda tapi udah mulai mikirin bikin rencana keuangan dan investasi. Tapi kalau mau main aman aku saranin kita mulai dari belajar investasi dulu aja. 😄",
+        "Action": "QR",
+        "Map": "Belajar Investasi, belajar berinvestasi sekarang"
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiUmur",
+        "Index": 2,
+        "Dialog": "Maaf, {bot_name} belum bisa mengerti umur yang Kamu maksud nih. Coba tuk masukkan angka ya &split&  Berapa umur kamu sekarang?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiUmur",
+        "Index": 3,
+        "Dialog": "Sudah nikah belum?",
+        "Action": "QR",
+        "Map": "Belum, 0#Sudah, 1"
+    },
+    {
+        "Step": "mulaiBerinvestasi_entitasStatusPerkawinan",
+        "Index": 1,
+        "Dialog": "Sudah nikah belum?",
+        "Action": "QR",
+        "Map": "Belum, 0#Sudah, 1"
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiStatusPerkawinan",
+        "Index": 1,
+        "Dialog": "Maaf@COMMA@ {bot_name} belum bisa mengerti yang Kamu maksud nih. sudah nikah belum?",
+        "Action": "QR",
+        "Map": "Belum, 0#Sudah, 1"
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiStatusPerkawinan",
+        "Index": 2,
+        "Dialog": "Income bulanan kamu berapa?",
+        "Action": "QR",
+        "Map": "Kurang dari Rp. 15 juta, 1#Rp. 15 juta - 35 juta, 2#Rp. 15 juta - 35 juta, 2#Lebih dari Rp. 35 juta, 3"
+    },
+    {
+        "Step": "mulaiBerinvestasi_entitasPendapatan",
+        "Index": 1,
+        "Dialog": "Income bulanan kamu berapa?",
+        "Action": "QR",
+        "Map": "Kurang dari Rp. 15 juta, 1#Rp. 15 juta - 35 juta, 2#Rp. 15 juta - 35 juta, 2#Lebih dari Rp. 35 juta, 3"
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiPendapatan",
+        "Index": 1,
+        "Dialog": "Maaf@COMMA@ {bot_name} belum bisa mengerti yang Kamu maksud nih. Income bulanan kamu berapa?",
+        "Action": "QR",
+        "Map": "Kurang dari Rp. 15 juta, 1#Rp. 15 juta - 35 juta, 2#Rp. 15 juta - 35 juta, 2#Lebih dari Rp. 35 juta, 3"
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiPendapatan",
+        "Index": 2,
+        "Dialog": "Ok! Biasanya berapa  persen yang simpan sebagai tabungan?",
+        "Action": "QR",
+        "Map": "Kurang dari 10%, 1#sekitar 10%-30%, 2#lebih dari 30%, 3"
+    },
+    {
+        "Step": "mulaiBerinvestasi_entitasTabungan",
+        "Index": 1,
+        "Dialog": "Ok! Biasanya berapa  persen yang simpan sebagai tabungan?",
+        "Action": "QR",
+        "Map": "Kurang dari 10%, 1#sekitar 10%-30%, 2#lebih dari 30%, 3"
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiTabungan",
+        "Index": 1,
+        "Dialog": "Maaf@COMMA@ {bot_name} belum bisa mengerti yang Kamu maksud nih. Ok! Biasanya berapa  persen yang simpan sebagai tabungan?",
+        "Action": "QR",
+        "Map": "Kurang dari 10%, 1#sekitar 10%-30%, 2#lebih dari 30%, 3"
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiTabungan",
+        "Index": 2,
+        "Dialog": "Udah pernah coba investasi di reksadana atau saham?",
+        "Action": "QR",
+        "Map": "Belum, 0#Sudah, 1"
+    },
+    {
+        "Step": "mulaiBerinvestasi_entitasStatusInvestasi",
+        "Index": 1,
+        "Dialog": "Udah pernah coba investasi di reksadana atau saham?",
+        "Action": "QR",
+        "Map": "Belum, 0#Sudah, 1"
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiStatusInvestasi",
+        "Index": 1,
+        "Dialog": "Maaf@COMMA@ {bot_name} belum bisa mengerti yang Kamu maksud nih. Udah pernah coba investasi di reksadana atau saham?",
+        "Action": "QR",
+        "Map": "Belum, 0#Sudah, 1"
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiStatusInvestasi",
+        "Index": 2,
+        "Dialog": "Santai, aku bakal bantuin pilihin instrumen investasi yang cocok. &split& Eh btw, aku boleh tau nggak, life goals kamu apa?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiRiskProfile",
+        "Index": 1,
+        "Dialog": "Oke deh! Eh btw, aku boleh tau nggak, life goals kamu apa?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pertumbuhanAset_entitasPendanaan",
+        "Index": 1,
+        "Dialog": "Ada 2 cara investasi nih, yaitu nambahin dana tiap bulan atau tempain dana sekali di awal aja &split& Tips: kalau mau memperkecil resiko, kamu bisa nambahin dana tiap bulan aja",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pertumbuhanAset_entitasPendanaan",
+        "Index": 2,
+        "Dialog": "Kamu pilih yang mana?",
+        "Action": "QR",
+        "Map": "Bulanan, 0#Sekali di awal, 1"
+    },
+    {
+        "Step": "pertumbuhanAset_ValidasiPendanaan",
+        "Index": 1,
+        "Dialog": "Maaf, {bot_name} belum bisa mengerti yang Kamu maksud nih.",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pertumbuhanAset_ValidasiPendanaan",
+        "Index": 2,
+        "Dialog": "Kamu pilih yang mana?",
+        "Action": "QR",
+        "Map": "Bulanan, 0#Sekali di awal, 1"
+    },
+    {
+        "Step": "pertumbuhanAset_ValidasiPendanaan",
+        "Index": 3,
+        "Dialog": "Berapa dana yang mau kamu invest #pendanaan#?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pertumbuhanAset_entitasBesarDanaInvestasi",
+        "Index": 1,
+        "Dialog": "Berapa dana yang mau kamu invest #pendanaan#?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pertumbuhanAset_ValidasiBesarDanaInvestasi",
+        "Index": 1,
+        "Dialog": "Maaf, {bot_name} belum bisa mengerti yang Kamu maksud nih. &split& Coba tuk masukkan angka ya. &split& Berapa dana yang mau kamu invest #pendanaan#?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pertumbuhanAset_ValidasiBesarDanaInvestasi",
+        "Index": 2,
+        "Dialog": "Mau berapa lama investasinya? (Contoh jawaban: 1 tahun, atau 6 bulan, atau 1 tahun 6 bulan)",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pertumbuhanAset_entitasLamaInvestasi",
+        "Index": 1,
+        "Dialog": "Mau berapa lama investasinya? (Contoh jawaban: 1 tahun, atau 6 bulan, atau 1 tahun 6 bulan)",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pertumbuhanAset_ValidasiLamaInvestasi",
+        "Index": 1,
+        "Dialog": "Maaf, {bot_name} belum bisa mengerti yang Kamu maksud nih. Coba tuk masukkan angka ya. &split&Mau berapa lama investasinya? (Contoh jawaban: 1 tahun, atau 6 bulan, atau 1 tahun 6 bulan)",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pertumbuhanAset_ValidasiLamaInvestasi",
+        "Index": 2,
+        "Dialog": "Siap! Aku noted dulu ya tujuan Life Goals-mu",
+        "Action": "QR",
+        "Map": "Lanjut,profilresikoocbc"
+    },
+    {
+        "Step": "pertumbuhanAset_webView",
+        "Index": 1,
+        "Dialog": "Oke! Lanjut klik tombol di bawah ini ya buat liat simulasinya",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pertumbuhanAset_validasiWebView",
+        "Index": 1,
+        "Dialog": "You got it! Tapi aku pengen tau dulu nih karaktermu buat nentuin investasi yang pas. Simpel kok! Kita mulai ya?",
+        "Action": "QR",
+        "Map": "Lanjut,profilresikoocbc"
+    },
+    {
+        "Step": "pertumbuhanAset_validasiWebView",
+        "Index": 2,
+        "Dialog": "Ini nih ringkasan prioritas Life Goals yang udah disesuain dengan Profil risiko",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pendidikanKuliahAnak_entitasUsiaAnak",
+        "Index": 1,
+        "Dialog": "Sekarang, anak kamu umurnya berapa tahun?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pendidikanKuliahAnak_validasiUsiaAnak",
+        "Index": 1,
+        "Dialog": "Maaf, {bot_name} belum bisa mengerti yang Kamu maksud nih. Coba tuk masukkan angka ya. &split& Sekarang, anak kamu umurnya berapa tahun?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pendidikanKuliahAnak_validasiUsiaAnak",
+        "Index": 2,
+        "Dialog": "Nanti rencananya mau kuliah di mana?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pendidikanKuliahAnak_entitasNegaraKuliah",
+        "Index": 1,
+        "Dialog": "Nanti rencananya mau kuliah di mana?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pendidikanKuliahAnak_validasiNegaraKuliah",
+        "Index": 1,
+        "Dialog": "Nanti rencananya mau kuliah di mana?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pendidikanKuliahAnak_validasiNegaraKuliah",
+        "Index": 2,
+        "Dialog": "Sekarang dana yang udah kekumpul berapa?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pendidikanKuliahAnak_entitasDanaSekarang",
+        "Index": 1,
+        "Dialog": "Sekarang dana yang udah kekumpul berapa?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pendidikanKuliahAnak_validasiDanaSekarang",
+        "Index": 1,
+        "Dialog": "Sekarang dana yang udah kekumpul berapa?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pendidikanKuliahAnak_validasiDanaSekarang",
+        "Index": 2,
+        "Dialog": "Siap! Aku noted dulu ya tujuan Life Goals-mu",
+        "Action": "QR",
+        "Map": "Lanjut,profilresikoocbc"
+    },
+    {
+        "Step": "pendidikanKuliahAnak_webView",
+        "Index": 1,
+        "Dialog": "Oke! Lanjut klik tombol di bawah ini ya buat liat simulasinya",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pendidikanKuliahAnak_validasiWebView",
+        "Index": 1,
+        "Dialog": "You got it! Tapi aku pengen tau dulu nih karaktermu buat nentuin investasi yang pas. Simpel kok! Kita mulai ya?",
+        "Action": "QR",
+        "Map": "Lanjut,profilresikoocbc"
+    },
+    {
+        "Step": "pendidikanKuliahAnak_validasiWebView",
+        "Index": 2,
+        "Dialog": "Ini nih ringkasan prioritas Life Goals yang udah disesuain dengan Profil risiko",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_entitasJudulLifeGoal",
+        "Index": 1,
+        "Dialog": "Jadi, apa nih life goals kamu?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLiburan_validasiJudulLifeGoal",
+        "Index": 1,
+        "Dialog": "Kamu mau liburan ke mana?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiJudulLifeGoal",
+        "Index": 1,
+        "Dialog": "Kasi tau dong, life goalsmu apa?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiJudulLifeGoal",
+        "Index": 1,
+        "Dialog": "Kasi tau dong, life goalsmu apa?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiJudulLifeGoal",
+        "Index": 2,
+        "Dialog": "Butuh dana berapa tuh kira-kira?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_entitasKebutuhanDana",
+        "Index": 1,
+        "Dialog": "Butuh dana berapa tuh kira-kira?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiKebutuhanDana",
+        "Index": 1,
+        "Dialog": "Butuh dana berapa tuh kira-kira?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiKebutuhanDana",
+        "Index": 2,
+        "Dialog": "Sekarang dana yang udah kekumpul berapa?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_entitasDanaSekarang",
+        "Index": 1,
+        "Dialog": "Sekarang dana yang udah kekumpul berapa?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiDanaSekarang",
+        "Index": 1,
+        "Dialog": "Sekarang dana yang udah kekumpul berapa?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiDanaSekarang",
+        "Index": 2,
+        "Dialog": "Goalsnya mau tercapai berapa lama lagi nih? (Contoh jawaban: 1 tahun, atau 6 bulan, atau 1 tahun 6 bulan)",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiDanaSekarang",
+        "Index": 3,
+        "Dialog": "Kamu mau liburannya berapa lama lagi nih? (Contoh jawaban: 1 tahun, atau 6 bulan, atau 1 tahun 6 bulan)",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_entitasLamaBerinvestasi",
+        "Index": 1,
+        "Dialog": "Goalsnya mau tercapai berapa lama lagi nih? (Contoh jawaban: 1 tahun, atau 6 bulan, atau 1 tahun 6 bulan)",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_entitasLamaBerinvestasi",
+        "Index": 2,
+        "Dialog": "Kamu mau liburannya berapa lama lagi nih? (Contoh jawaban: 1 tahun, atau 6 bulan, atau 1 tahun 6 bulan)",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiLamaBerinvestasi",
+        "Index": 1,
+        "Dialog": "Maaf, {bot_name} belum bisa mengerti yang Kamu maksud nih. Coba tuk masukkan angka ya. &split& Goalsnya mau tercapai berapa lama lagi nih? (Contoh jawaban: 1 tahun, atau 6 bulan, atau 1 tahun 6 bulan)",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiLamaBerinvestasi",
+        "Index": 2,
+        "Dialog": "Maaf, {bot_name} belum bisa mengerti yang Kamu maksud nih. Coba tuk masukkan angka ya. &split& Kamu mau liburannya berapa lama lagi nih? (Contoh jawaban: 1 tahun, atau 6 bulan, atau 1 tahun 6 bulan)",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiLamaBerinvestasi",
+        "Index": 3,
+        "Dialog": "Siap! Aku noted dulu ya tujuan Life Goals-mu",
+        "Action": "QR",
+        "Map": "Lanjut,profilresikoocbc"
+    },
+    {
+        "Step": "lifeGoalLainnya_webView",
+        "Index": 1,
+        "Dialog": "Oke! Lanjut klik tombol di bawah ini ya buat liat simulasinya",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiWebView",
+        "Index": 1,
+        "Dialog": "You got it! Tapi aku pengen tau dulu nih karaktermu buat nentuin investasi yang pas. Simpel kok! Kita mulai ya?",
+        "Action": "QR",
+        "Map": "Lanjut,profilresikoocbc"
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiWebView",
+        "Index": 2,
+        "Dialog": "Ini nih ringkasan prioritas Life Goals yang udah disesuain dengan Profil risiko",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "riskProfile_entitasStatusInvestasi",
+        "Index": 1,
+        "Dialog": "Sekarang kita masuk ke step #2: cari tahu risk profilemu.",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "riskProfile_entitasStatusInvestasi",
+        "Index": 2,
+        "Dialog": "Sebelumnya aku mau tau dulu nih@COMMA@ kamu udah pernah investasi di reksa dana atau belum? ",
+        "Action": "QR",
+        "Map": "Belum pernah nih, 0#Udah dong, 1"
+    },
+    {
+        "Step": "riskProfile_validasiStatusInvestasi",
+        "Index": 1,
+        "Dialog": "Maaf, {bot_name} belum bisa mengerti yang Kamu maksud nih.",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "riskProfile_validasiStatusInvestasi",
+        "Index": 2,
+        "Dialog": "Sebelumnya aku mau tau dulu nih@COMMA@ kamu udah pernah investasi di reksa dana atau belum?",
+        "Action": "QR",
+        "Map": "Belum pernah nih, 0#Udah dong, 1"
+    },
+    {
+        "Step": "riskProfile_validasiStatusInvestasi",
+        "Index": 3,
+        "Dialog": "Siap! Aku bakal bantu kamu cari tau risk profile kamu!&split&Risk profile ini menentukan seberapa tahannya kamu terhadap risiko investasi yang pasti selalu ada.&split&Yuk! Aku bantu cek dengan 4 aja pertanyaan aja kokk… gak ada benar salah di sini. Jawab aja yang kamu bgt. ",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "riskProfile_validasiStatusInvestasi",
+        "Index": 4,
+        "Dialog": "Dari mana sih dana yang kamu pakai buat investasi?",
+        "Action": "QR",
+        "Map": "Gaji,2.a#Usaha/Bisnis Pribadi,2.b#Warisan Ortu,2.c#Gak ada sumber tetap sih,2.d"
+    }, 
+    {
+        "Step": "riskProfile_validasiProfileResiko",
+        "Index": 1,
+        "Dialog": "Karakter dari tipe kamu ini ",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "riskProfile_validasiProfileResiko",
+        "Index": 2,
+        "Dialog": "Klik lanjut untuk melihat ringkasan data kamu",
+        "Action": "QR",
+        "Map": "Lanjut,lihat ringkasan saya"
+    }, 
+    {
+        "Step": "riskProfile_entitasSumberDana",
+        "Index": 1,
+        "Dialog": "Dari mana sih dana yang kamu pakai buat investasi? ",
+        "Action": "QR",
+        "Map": "Gaji,2.a#Usaha/Bisnis Pribadi,2.b#Warisan Ortu,2.c#Gak ada sumber tetap sih,2.d"
+    },
+    {
+        "Step": "riskProfile_validasiSumberDana",
+        "Index": 1,
+        "Dialog": "Maaf {bot_name} belum mengerti sumber dana yang kamu maksud, klik tombol di bawah ini ya. ",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "riskProfile_validasiSumberDana",
+        "Index": 2,
+        "Dialog": "Dari mana sih dana yang kamu pakai buat investasi? ",
+        "Action": "QR",
+        "Map": "Gaji,2.a#Usaha/Bisnis Pribadi,2.b#Warisan Ortu,2.c#Gak ada sumber tetap sih,2.d"
+    },
+    {
+        "Step": "riskProfile_validasiSumberDana",
+        "Index": 3,
+        "Dialog": "I see.",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "riskProfile_validasiSumberDana",
+        "Index": 4,
+        "Dialog": "Menurut kamu aja nih@COMMA@ gimana pengetahuan kamu soal investasi? ",
+        "Action": "QR",
+        "Map": "Belum tau sama sekali,3.a#Pernah denger dikit,3.b#Tau secara umum aja,3.c#Udah ngerti kok,3.d#Master banget,3.e"
+    },
+    {
+        "Step": "riskProfile_entitasPengetahuan",
+        "Index": 1,
+        "Dialog": "I see.&split& Menurut kamu aja nih@COMMA@ gimana pengetahuan kamu soal investasi? ",
+        "Action": "QR",
+        "Map": "Belum tau sama sekali,3.a#Pernah denger dikit,3.b#Tau secara umum aja,3.c#Udah ngerti kok,3.d#Master banget,3.e"
+    },
+    {
+        "Step": "riskProfile_validasiPengetahuan",
+        "Index": 1,
+        "Dialog": "Maaf, {bot_name} belum mengerti tingkat pengetahuan yang kamu maksud, klik tombol di bawah ini ya.",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "riskProfile_validasiPengetahuan",
+        "Index": 2,
+        "Dialog": "Menurut kamu aja nih@COMMA@ gimana pengetahuan kamu soal investasi? ",
+        "Action": "QR",
+        "Map": "Belum tau sama sekali,3.a#Pernah denger dikit,3.b#Tau secara umum aja,3.c#Udah ngerti kok,3.d#Master banget,3.e"
+    },
+    {
+        "Step": "riskProfile_validasiPengetahuan",
+        "Index": 3,
+        "Dialog": "Nah, kalau investasi ini untung, gimana plan kamu mengelola keuntungannya?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "riskProfile_entitasPembagianHasil",
+        "Index": 1,
+        "Dialog": "Nah, kalau investasi ini untung, gimana plan kamu mengelola keuntungannya?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "riskProfile_validasiPembagianHasil",
+        "Index": 1,
+        "Dialog": "Maaf {bot_name} belum mengerti yang kamu maksud, klik tombol di bawah ini ya &split& Gimana caramu kelola keuntungan investasi?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "riskProfile_validasiPembagianHasil",
+        "Index": 2,
+        "Dialog": "Terakhir, ini aku kasih opsi 5 produk dengan potensi untung & ruginya.",
+        "Action": "",   
+        "Map": ""
+    },
+    {
+        "Step": "riskProfile_validasiPembagianHasil",
+        "Index": 3,
+        "Dialog": "Kamu kira-kira mau pilih produk yang mana?",
+        "Action": "QR",
+        "Map": "Produk A. Karena aku menghindari rugi,1#Produk B. Karena mau lebih cuan tapi ruginya dikit aja,2#Produk C. Yang sedang-sedang aja deh cuan sama ruginya,3#Produk D. Potensi cuannya mayan nih,4#Produk E. Paling cuan walaupun resiko paling tinggi,5"
+    },
+    {
+        "Step": "riskProfile_entitasSkenarioKeuntungan",
+        "Index": 1,
+        "Dialog": "Terakhir, ini aku kasih opsi 5 produk dengan potensi untung & ruginya.",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "riskProfile_entitasSkenarioKeuntungan",
+        "Index": 2,
+        "Dialog": "Kamu kira-kira mau pilih produk yang mana? ",
+        "Action": "QR",
+        "Map": "Produk A. Karena aku menghindari rugi,1#Produk B. Karena mau lebih cuan tapi ruginya dikit aja,2#Produk C. Yang sedang-sedang aja deh cuan sama ruginya,3#Produk D. Potensi cuannya mayan nih,4#Produk E. Paling cuan walaupun resiko paling tinggi,5"
+    },
+    {
+        "Step": "riskProfile_validasiSkenarioKeuntungan",
+        "Index": 1,
+        "Dialog": "Maaf {bot_name} belum mengerti yang kamu maksud. &split& Terakhir, ini aku kasih opsi 5 produk dengan potensi untung & ruginya.",
+        "Action": "", 
+        "Map": ""
+    },
+    {
+        "Step": "riskProfile_validasiSkenarioKeuntungan",
+        "Index": 2,
+        "Dialog": "Kamu kira-kira mau pilih produk yang mana? ",
+        "Action": "QR", 
+        "Map": "Produk A. Karena aku menghindari rugi,1#Produk B. Karena mau lebih cuan tapi ruginya dikit aja,2#Produk C. Yang sedang-sedang aja deh cuan sama ruginya,3#Produk D. Potensi cuannya mayan nih,4#Produk E. Paling cuan walaupun resiko paling tinggi,5"
+    },
+    {
+        "Step": "riskProfile_validasiSkenarioKeuntungan",
+        "Index": 3,
+        "Dialog": "Klik lanjut untuk melihat ringkasan data kamu",
+        "Action": "QR",
+        "Map": "Lanjut,lihat ringkasan saya"
+    },
+    {
+        "Step": "riskProfile_final",
+        "Index": 1,
+        "Dialog": "Profil risiko adalah",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "riskProfile_final",
+        "Index": 2,
+        "Dialog": "Mohon maaf untuk sementara sistem sedang dalam pemeliharaan",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "transisiListProduct_webView",
+        "Index": 1,
+        "Dialog": "Ini nih ringkasan prioritas Life Goals yang udah disesuain dengan Profil risiko",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "transisiListProduct_final",
+        "Index": 1,
+        "Dialog": "Next.. aku udah pilihin produk investasi yang cocok buat mencapai life goal kamu. Nanti kamu pilih satu yah..",
+        "Action": "QR",
+        "Map": "Lanjut,rekomendasi product"
+    },
+    {
+        "Step": "contactUser_entitasNama",
+        "Index": 1,
+        "Dialog": "Nama lengkap kamu siapa?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiNama",
+        "Index": 1,
+        "Dialog": "Hmm, sepertinya nama yang Kamu masukkan salah. Tolong ketik nama yang benar ya :)'  ?? &split&Aku butuh nama lengkapmu dulu nih. Sebutin dong.",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiNama",
+        "Index": 2,
+        "Dialog": "Apakah kamu sudah menjadi nasabah OCBC NISP saat ini?",
+        "Action": "QR",
+        "Map": "Sudah,sudah#Belum,belum"
+    },
+    {
+        "Step": "contactUser_entitasStatusNasabah",
+        "Index": 1,
+        "Dialog": "Apakah kamu sudah menjadi nasabah OCBC NISP saat ini?",
+        "Action": "QR",
+        "Map": "Sudah,sudah#Belum,belum"
+    },
+    {
+        "Step": "contactUser_validasiStatusNasabah",
+        "Index": 1,
+        "Dialog": "Hmm, sepertinya yang Kamu masukkan salah.",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiStatusNasabah",
+        "Index": 2,
+        "Dialog": "Apakah kamu sudah menjadi nasabah OCBC NISP saat ini?",
+        "Action": "QR",
+        "Map": "Sudah,sudah#Belum,belum"
+    },
+    {
+        "Step": "contactUser_entitasEmail",
+        "Index": 1,
+        "Dialog": "Masukkan alamat e-mailmu yang sudah terdaftar di OCBC NISP ya... Nanti aku akan e-mail ke sini.",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_entitasEmail",
+        "Index": 2,
+        "Dialog": "Masukkan alamat e-mail mu yang valid ya... Nanti aku akan e-mail ke sini.",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiEmail",
+        "Index": 1,
+        "Dialog": "Hmm, sepertinya alamat email yang Kamu masukkan salah. Tolong ketik alamat email yang benar ya :)'  ?? &split&Nanti aku akan e-mail ke sini. ",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiEmail",
+        "Index": 2,
+        "Dialog": "Kalau nomor hp kamu berapa?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_entitasUsia",
+        "Index": 1,
+        "Dialog": "Berapa usiamu sekarang? ",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiUsia",
+        "Index": 1,
+        "Dialog": "Maaf {bot_name} belum bisa mengerti umur yang Kamu maksud nih. Coba tuk masukkan angka ya &split&  Berapa umur kamu sekarang?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_entitasLokasi",
+        "Index": 1,
+        "Dialog": "Aku mau nanya lagi nih kamu tinggalnya di kota mana sih?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiLokasi",
+        "Index": 1,
+        "Dialog": "Maaf {bot_name} belum mengerti tempat tinggal &split& Kamu tinggalnya di kota mana sih?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiLokasi",
+        "Index": 2,
+        "Dialog": "Berapa nomor telepon kamu yang bisa aku hubungi? Siapa tau aku mau gantian curhat ke kamu :P bercanda deng...",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_entitasNoTlp",
+        "Index": 1,
+        "Dialog": "Kalau nomor hp kamu berapa?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiNoTlp",
+        "Index": 1,
+        "Dialog": "Maaf {bot_name} belum mengerti nomor hp tersebut &split& Kalau nomor hp kamu berapa?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiNoTlp",
+        "Index": 2,
+        "Dialog": "Last... Sebelum aku kirimin pilihan investasimu tadi@COMMA@ aku mau nanya dong pendapatmu tentang aku gimana?",
+        "Action": "QR",
+        "Map": "Kamu asik banget:),2#Kurang nyambung:(,0"
+    },
+    {
+        "Step": "contactUser_entitasRating",
+        "Index": 1,
+        "Dialog": "Gimana pengalaman kamu ngobrol sama aku?",
+        "Action": "QR",
+        "Map": "Asik dan guna banget,2#Kurang oke ah,0"
+    },
+    {
+        "Step": "contactUser_validasiRating",
+        "Index": 1,
+        "Dialog": "Gimana pengalaman kamu ngobrol sama aku?",
+        "Action": "QR",
+        "Map": "Asik dan guna banget,2#Kurang oke ah,0"
+    },
+    {
+        "Step": "contactUser_validasiRating",
+        "Index": 2,
+        "Dialog": "Huhu maafin aku ya. Poin apa yang bikin kamu kecewa sama aku?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiRating",
+        "Index": 3,
+        "Dialog": "Tulis feedback kamu yah, biar aku makin bisa bantuin kamu investasi",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_entitasRatingComment",
+        "Index": 1,
+        "Dialog": "Tulis feedback kamu yah, biar aku makin bisa bantuin kamu investasi",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_entitasRatingComment",
+        "Index": 2,
+        "Dialog": "Terharu deh dibilang asik dan guna banget. Kira-kira masih ada yang perlu aku tingkatin lagi gak nih?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiRatingComment",
+        "Index": 1,
+        "Dialog": "Tulis feedback kamu yah, biar aku makin bisa bantuin kamu investasi",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiRatingComment",
+        "Index": 2,
+        "Dialog": "Terharu deh dibilang baik dan seru. Kira-kira masih ada yang perlu aku tingkatin lagi gak nih?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "Ringkasan_send_PDF",
+        "Index": 1,
+        "Dialog": "Terima kasih ya atas feedbacknya!",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "Ringkasan_send_PDF",
+        "Index": 2,
+        "Dialog": "Your Invesment Plan is ready now!",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "Ringkasan_send_PDF",
+        "Index": 3,
+        "Dialog": "Lihat semua informasi rencana investasimu di sini!",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "Ringkasan_send_PDF",
+        "Index": 4,
+        "Dialog": "Investment Plan kamu juga sudah aku kirim ke emailmu ",
+        "Action": "QR",
+        "Map": "What Next,what next"
+    }, 
+    {
+        "Step": "validasi_send_PDF",
+        "Index": 1,
+        "Dialog": "",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "contactUser_AfterReport",
+        "Index": 1,
+        "Dialog": "Rencana gak ada artinya tanpa eksekusi",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "contactUser_AfterReportSudahNasabah",
+        "Index": 1,
+        "Dialog": "Next, kamu bisa buka akun investasi langsung di aplikasi ONeMobile",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "contactUser_AfterReportSudahNasabah",
+        "Index": 2,
+        "Dialog": "Transaksi jual beli reksa dana juga bisa lewat aplikasi ONeMobile aja lho",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "contactUser_AfterReportSudahNasabah",
+        "Index": 3,
+        "Dialog": "Transaksi aman dan praktis lewat aplikasi mobile aja",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "contactUser_AfterReportSudahNasabah",
+        "Index": 4,
+        "Dialog": "Untuk mulai lagi dari menu utama, silakan ketik 'menu' ya",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "contactUser_AfterReportBelumNasabah",
+        "Index": 1, 
+        "Dialog": "Untuk eskekusi Investment Plan kamu tadi, kamu bisa mulai dari join OCBC NISP sekarang",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "contactUser_AfterReportBelumNasabah",
+        "Index": 2,
+        "Dialog": "Ribet? Enggak dong! Sekarang OCBC NISP punya aplikasi ONeMobile yang serba bisa dan praktis",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "contactUser_AfterReportBelumNasabah",
+        "Index": 3,
+        "Dialog": "Mulai dari buka akun investasi sampai transaksi reksa dana/tabungan/deposito, semua bisa lewat 1 aplikasi aja #antiribet",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "contactUser_AfterReportBelumNasabah",
+        "Index": 4,
+        "Dialog": "Yuk langsung join OCBC NISP sekarang juga",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "contactUser_AfterReportBelumNasabah",
+        "Index": 5,
+        "Dialog": "Daftar secara online lebih mudah",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "contactUser_AfterReportBelumNasabah",
+        "Index": 6,
+        "Dialog": "Untuk mulai lagi dari menu utama, silakan ketik 'menu' ya",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "belajarBerinvestasi_jenisProfilRisiko",
+        "Index": 1,
+        "Dialog": "Profil risiko itu dibagi jadi 4 jenis ",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "belajarBerinvestasi_jenisProfilRisiko",
+        "Index": 2,
+        "Dialog": "Gimana? Udah kebayang kamu yang mana?",
+        "Action": "QR",
+        "Map": "OK aku udah tau profil risikoku!,sudah tau#Hmm..masih bingung yang mana,masih bingung"
+    }, 
+    {
+        "Step": "belajarBerinvestasi_jenisProfilRisiko",
+        "Index": 3,
+        "Dialog": "Growth \\n - kamu mau untung lebih besar \\n - kamu juga sadar, investasi kamu agak moderat risikonya \\n - produk investasi yang kamu banget adalah reksa dana campuran dan reksa dana saham",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "belajarBerinvestasi_jenisProfilRisiko",
+        "Index": 4,
+        "Dialog": "Aggressive \\n - go big or go home adalah prinsip kamu \\n - kamu pengen untung yang besar, tapi kamu juga sadar higher return ya pasti higher risk. \\n - produk investasi yang kamu banget adalah reksa dana saham",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "belajarBerinvestasi_jenisProfilRisiko",
+        "Index": 5,
+        "Dialog": "Highly Aggressive \\n - kamu sangat paham soal kondisi pasar keuangan dan produk investasi \\n - untung besar adalah semangat kamu dan kamu santai dengan fluktuasi pasar jangka menengah dan pendek",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "belajarBerinvestasi_pertanyaanUser4",
+        "Index": 1,
+        "Dialog": "Ada kok investasi buat pemula yang murah meriah &split&Reksa dana aja sekarang bisa mulai dari 10 ribu! Lebih murah dari pada jajan boba kan?",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "belajarBerinvestasi_pertanyaanUser4",
+        "Index": 2,
+        "Dialog": "Tinggal kamu aja yang komit dan konsisten investasi tiap bulan.",
+        "Action": "QR",
+        "Map": "Oke!Aku siap!,aku siap"
+    }, 
+    {
+        "Step": "belajarBerinvestasi_pertanyaanUser4",
+        "Index": 3,
+        "Dialog": "Tenang! Ada 2 Tips lagi untuk manage resiko investasi&split&Tips #1 adalah diversifikasi. Jadi jangan hanya investasi di satu jenis instrumen, tapi disebar ke beberapa jenis instrumen lainnya.&split&Jadi, kalau ada satu jenis instrumen yang kinerjanya jelek, kamu masih punya cadangan instrumen lainnya.",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "belajarBerinvestasi_pertanyaanUser4",
+        "Index": 4,
+        "Dialog": "Jadi resiko kerugiannya berkurang deh.",
+        "Action": "QR",
+        "Map": "Terus apa lagi tipsnya?,terus apa lagi tipsnya"
+    },
+    {
+        "Step": "belajarBerinvestasi_bikinRencanaInvestasi",
+        "Index": 1,
+        "Dialog": "Bikin Rencana Investasi Sendiri",
+        "Action": "QR",
+        "Map": "Lanjut,bikin rencana investasi"
+    },
+    {
+        "Step": "belajarBerinvestasi_getCarouselQuotes",
+        "Index": 1,
+        "Dialog": "Cuan Cookie buat Kamu",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "belajarBerinvestasi_getCarouselQuotes",
+        "Index": 2,
+        "Dialog": "Biar makin semangat investasinya",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "belajarBerinvestasi_getCarouselQuotes",
+        "Index": 3,
+        "Dialog": "Buka Cuan Cookie",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "rekomendasiProduct_carousel",
+        "Index": 1,
+        "Dialog": "Nah ini beberapa pilihan produk yang cocok dengan life goalsmu dan risk profilemu. &split& Silakan kamu pilih yang paling pas buatmu yaa… ",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "rekomendasiProduct_belumtauReksadana",
+        "Index": 1,
+        "Dialog": "Yuk@COMMA@ lanjut lihat beberapa pilihan produk yang cocok dengan life goalsmu dan risk profilemu.",
+        "Action": "QR",
+        "Map": "Lanjut,lanjut#OK,ok"
+    },
+    {
+        "Step": "rekomendasiProduct_belumtauReksadana",
+        "Index": 2,
+        "Dialog": "Nah ini beberapa pilihan produk yang cocok dengan life goalsmu dan risk profilemu &split& Silakan kamu pilih yang paling pas buatmu yaa…",
+        "Action": "",
+        "Map": ""
+    }
+]

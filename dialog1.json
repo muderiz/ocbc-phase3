@@ -1,0 +1,121 @@
+[
+ {
+   "Step": "entitasNama",
+   "Index": 1,
+   "Dialog": "Halo! Aku {bot_name}, penasehat keuangan pribadi Kamu \\n Sebelum kita mulai, siapa nama kamu?",
+   "Action": "",
+   "Map": ""
+ },
+ {
+   "Step": "validasiSyaratKetentuan",
+   "Index": 1,
+   "Dialog": "Dengan menggunakan platform {bot_name}. {first_name} telah menyetujui syarat dan ketentuan yang berlaku.",
+   "Action": "QR",
+   "Map": "Setuju, Setuju#Tidak Setuju, Batal"
+ },
+ {
+   "Step": "entitasUmur",
+   "Index": 1,
+   "Dialog": "Yay! Yuk kita mulai dengan memahami profil {first_name} terlebih dahulu sebelum kita mencoba simulasi Life Goal {first_name} sesaat lagi. \\nBerapakah umur {first_name} sekarang?",
+   "Action": "",
+   "Map": ""
+ },
+ {
+   "Step": "validasiUmur",
+   "Index": 1,
+   "Dialog": "Apa {first_name} sudah menikah?",
+   "Action": "QR",
+   "Map": "Belum, 0#Sudah, 1"
+ },
+ {
+   "Step": "validasiUmur",
+   "Index": 2,
+   "Dialog": "{bot_name} suka banget sama semangat {first_name} yang ingin memulai investasi di usia semuda sekarang! salut! Tetapi &#44; mengingat umur {first_name} yang masih berjiwa muda banget nih &#44; ada baiknya kita memulai dengan belajar investasi terlebih dahulu ya ðŸ˜„",
+   "Action": "QR",
+   "Map": "Belajar Investasi, belajar berinvestasi sekarang"
+ },
+ {
+   "Step": "validasiUmur",
+   "Index": 3,
+   "Dialog": "Maaf {first_name}, {bot_name} belum bisa mengerti umur yang Kamu maksud nih. Coba tuk masukkan angka ya \\nBerapakah umur {first_name} sekarang?",
+   "Action": "",
+   "Map": ""
+ },
+ {
+   "Step": "validasiStatusPerkawinan",
+   "Index": 1,
+   "Dialog": "Apa {first_name} sudah menikah?",
+   "Action": "QR",
+   "Map": "Belum, 0#Sudah, 1"
+ },
+ {
+   "Step": "validasiStatusPerkawinan",
+   "Index": 2,
+   "Dialog": "Sekarang {bot_name} ingin tau kebiasaan menabung {first_name}. \\nBerapa kisaran pendapatan bulanan {first_name} saat ini? ",
+   "Action": "QR",
+   "Map": "Kurang dari Rp. 15 juta, 1#Rp. 15 juta - 35 juta, 2#Rp. 15 juta - 35 juta, 2#Lebih dari Rp. 35 juta, 3"
+ },
+ {
+   "Step": "validasiPendapatan",
+   "Index": 1,
+   "Dialog": "Sekarang {bot_name} ingin tau kebiasaan menabung {first_name}. \\nBerapa kisaran pendapatan bulanan {first_name} saat ini? ",
+   "Action": "QR",
+   "Map": "Kurang dari Rp. 15 juta, 1#Rp. 15 juta - 35 juta, 2#Rp. 15 juta - 35 juta, 2#Lebih dari Rp. 35 juta, 3"
+ },
+ {
+   "Step": "validasiPendapatan",
+   "Index": 2,
+   "Dialog": "Berapa persen dari pendapatan {first_name} yang biasanya ditabung?",
+   "Action": "QR",
+   "Map": "Kurang dari 10%, 1#sekitar 10%-30%, 2#lebih dari 30%, 3"
+ },
+ {
+   "Step": "validasiTabungan",
+   "Index": 1,
+   "Dialog": "Berapa persen dari pendapatan {first_name} yang biasanya ditabung?",
+   "Action": "QR",
+   "Map": "Kurang dari 10%, 1#sekitar 10%-30%, 2#lebih dari 30%, 3"
+ },
+ {
+   "Step": "validasiTabungan",
+   "Index": 2,
+   "Dialog": "Apakah {first_name} sudah pernah berinvestasi di reksa dana dan/atau saham sebelumnya?",
+   "Action": "QR",
+   "Map": "Belum, 0#Sudah, 1"
+ },
+ {
+   "Step": "setDataMulaiBerinvestasi",
+   "Index": 1,
+   "Dialog": "Berdasarkan profil {first_name} ",
+   "Action": "",
+   "Map": ""
+ },
+ {
+   "Step": "pertumbuhanAset_entitasPendanaan",
+   "Index": 1,
+   "Dialog": "Bagaimanakah {first_name} akan mendanai investasi ini?",
+   "Action": "QR",
+   "Map": "Menambah dana investasi rutin setiap bulan , Perbulan#Lumpsum/ menempatkan dana sekali saja diawal investasi, lumpsum"
+ },
+ {
+   "Step": "pertumbuhanAset_ValidasiPendanaan",
+   "Index": 1,
+   "Dialog": "Berapa dana %pendanaan% yang {first_name} ingin investasikan?",
+   "Action": "",
+   "Map": ""
+ },
+ {
+   "Step": "pertumbuhanAset_ValidasiBesarDanaInvestasi",
+   "Index": 1,
+   "Dialog": "Berapa dana %pendanaan% yang {first_name} ingin investasikan?",
+   "Action": "",
+   "Map": ""
+ },
+ {
+   "Step": "pertumbuhanAset_ValidasiBesarDanaInvestasi",
+   "Index": 2,
+   "Dialog": "Kira-kira berapa tahun kah {first_name} ingin berinvestasi?",
+   "Action": "",
+   "Map": ""
+ }
+]

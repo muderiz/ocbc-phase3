@@ -1,0 +1,84 @@
+Step,Index,Dialog,Action,Map
+mulaiBerinvestasi_entitasSyaratDanKetentuan,1,"Dengan menggunakan platform MONA, Anda telah menyetujui  syarat dan ketentuan yang berlaku.",,
+mulaiBerinvestasi_validasiSyaratKetentuan,1,Dengan menggunakan platform {bot_name}. {first_name} telah menyetujui syarat dan ketentuan yang berlaku.,QR,"Setuju,Setuju#Tidak Setuju,Batal"
+mulaiBerinvestasi_validasiSyaratKetentuan,2,Yay! Yuk kita mulai dengan memahami profil {first_name} terlebih dahulu sebelum kita mencoba simulasi Life Goal {first_name} sesaat lagi. \nBerapakah umur {first_name} sekarang?,,
+mulaiBerinvestasi_entitasUmur,1,Yay! Yuk kita mulai dengan memahami profil {first_name} terlebih dahulu sebelum kita mencoba simulasi Life Goal {first_name} sesaat lagi. \nBerapakah umur {first_name} sekarang?,,
+mulaiBerinvestasi_validasiUmur,1,{bot_name} suka banget sama semangat {first_name} yang ingin memulai investasi di usia semuda sekarang! salut! Tetapi &#44; mengingat umur {first_name} yang masih berjiwa muda banget nih &#44; ada baiknya kita memulai dengan belajar investasi terlebih dahulu ya ??,QR,"Belajar Investasi, belajar berinvestasi sekarang"
+mulaiBerinvestasi_validasiUmur,2,"Maaf {first_name}, {bot_name} belum bisa mengerti umur yang Kamu maksud nih. Coba tuk masukkan angka ya \nBerapakah umur {first_name} sekarang?",,
+mulaiBerinvestasi_validasiUmur,3,Apa {first_name} sudah menikah?,QR,"Belum, 0#Sudah, 1"
+mulaiBerinvestasi_entitasStatusPerkawinan,1,Apa {first_name} sudah menikah?,QR,"Belum, 0#Sudah, 1"
+mulaiBerinvestasi_validasiStatusPerkawinan,1,Apa {first_name} sudah menikah?,QR,"Belum, 0#Sudah, 1"
+mulaiBerinvestasi_validasiStatusPerkawinan,2,Sekarang {bot_name} ingin tau kebiasaan menabung {first_name}. \nBerapa kisaran pendapatan bulanan {first_name} saat ini?,QR,"Kurang dari Rp. 15 juta, 1#Rp. 15 juta - 35 juta, 2#Rp. 15 juta - 35 juta, 2#Lebih dari Rp. 35 juta, 3"
+mulaiBerinvestasi_entitasPendapatan,1,Sekarang {bot_name} ingin tau kebiasaan menabung {first_name}. \nBerapa kisaran pendapatan bulanan {first_name} saat ini?,QR,"Kurang dari Rp. 15 juta, 1#Rp. 15 juta - 35 juta, 2#Rp. 15 juta - 35 juta, 2#Lebih dari Rp. 35 juta, 3"
+mulaiBerinvestasi_validasiPendapatan,1,Sekarang {bot_name} ingin tau kebiasaan menabung {first_name}. \nBerapa kisaran pendapatan bulanan {first_name} saat ini?,QR,"Kurang dari Rp. 15 juta, 1#Rp. 15 juta - 35 juta, 2#Rp. 15 juta - 35 juta, 2#Lebih dari Rp. 35 juta, 3"
+mulaiBerinvestasi_validasiPendapatan,2,Berapa persen dari pendapatan {first_name} yang biasanya ditabung?,QR,"Kurang dari 10%, 1#sekitar 10%-30%, 2#lebih dari 30%, 3"
+mulaiBerinvestasi_entitasTabungan,1,Berapa persen dari pendapatan {first_name} yang biasanya ditabung?,QR,"Kurang dari 10%, 1#sekitar 10%-30%, 2#lebih dari 30%, 3"
+mulaiBerinvestasi_validasiTabungan,1,Berapa persen dari pendapatan {first_name} yang biasanya ditabung?,QR,"Kurang dari 10%, 1#sekitar 10%-30%, 2#lebih dari 30%, 3"
+mulaiBerinvestasi_validasiTabungan,2,Apakah {first_name} sudah pernah berinvestasi di reksa dana dan/atau saham sebelumnya?,QR,"Belum, 0#Sudah, 1"
+mulaiBerinvestasi_entitasStatusInvestasi,1,Apakah {first_name} sudah pernah berinvestasi di reksa dana dan/atau saham sebelumnya?,QR,"Belum, 0#Sudah, 1"
+mulaiBerinvestasi_validasiStatusInvestasi,1,Apakah {first_name} sudah pernah berinvestasi di reksa dana dan/atau saham sebelumnya?,QR,"Belum, 0#Sudah, 1"
+pertumbuhanAset_entitasPendanaan,1,Bagaimanakah {first_name} akan mendanai investasi ini?,QR,"Menambah dana investasi rutin setiap bulan , 0#Lumpsum/ menempatkan dana sekali saja diawal investasi, 1"
+pertumbuhanAset_ValidasiPendanaan,1,Maaf {first_name}&#44 {bot_name} belum bisa mengerti yang Kamu maksud nih. &split&Bagaimanakah {first_name} akan mendanai investasi ini?,QR,"Menambah dana investasi rutin setiap bulan , 0#Lumpsum/ menempatkan dana sekali saja diawal investasi, 1"
+pertumbuhanAset_ValidasiPendanaan,2,Berapa dana %pendanaan% yang {first_name} ingin investasikan?,,
+pertumbuhanAset_entitasBesarDanaInvestasi,1,Berapa dana %pendanaan%yang {first_name} ingin investasikan?,,
+pertumbuhanAset_ValidasiBesarDanaInvestasi,1,Maaf {first_name}&#44 {bot_name} belum bisa mengerti yang Kamu maksud nih. &split&Coba tuk masukkan angka ya. &split&Berapa dana %pendanaan%yang {first_name} ingin investasikan?,,
+pertumbuhanAset_ValidasiBesarDanaInvestasi,2,Kira-kira berapa tahun kah {first_name} ingin berinvestasi?,,
+pertumbuhanAset_entitasLamaInvestasi,1,Kira-kira berapa tahun kah {first_name} ingin berinvestasi?,,
+pertumbuhanAset_ValidasiLamaInvestasi,1,"Maaf {first_name}, {bot_name} belum bisa mengerti yang Kamu maksud nih. Coba tuk masukkan angka ya. &split&Kira-kira berapa tahun kah {first_name} ingin berinvestasi?",,
+pertumbuhanAset_ValidasiLamaInvestasi,2,Untuk melanjutkan klik tombol dibawah ini ya {first_name},,
+pertumbuhanAset_webView,1,Untuk melanjutkan klik tombol dibawah ini ya {first_name},,
+pertumbuhanAset_validasiWebView,1,Yuk mulai investasi sekarang untuk mewujudkan target Pertumbuhan Aset {first_name} menjadi kenyataan! &split&Untuk memberikan pilihan produk investasi beserta potensi laba yang lebih akurat. {bot_name} perlu mengetahui profil resiko {first_name} terlebih dahulu melalui 4 pertanyaan singkat berikut.,QR,Lanjut#Risk Profile
+pertumbuhanAset_validasiWebView,2,Berikut adalah ringkasan prioritas Life Goal yang telah disesuaikan dengan Profil Resiko {first_name}.,,
+pendidikanKuliahAnak_entitasUsiaAnak,1,Berapakah usia anak {first_name} saat ini?,,
+pendidikanKuliahAnak_validasiUsiaAnak,1,"Maaf {first_name}, {bot_name} belum bisa mengerti yang Kamu maksud nih. Coba tuk masukkan angka ys. &split& Berapakah usia anak {first_name} saat ini?",,
+pendidikanKuliahAnak_validasiUsiaAnak,2,Di negara manakah anak {first_name} ingin dikuliahkan?,QR,"Indonesia,1#Singapura,2#Britania Raya/Inggris,3#Amerika Serikat ( Universitas Negeri),4#Amerika Serikat ( Universitas Swasta ),5#Australia,6"
+pendidikanKuliahAnak_entitasNegaraKuliah,1,Di negara manakah anak {first_name} ingin dikuliahkan?,QR,"Indonesia,1#Singapura,2#Britania Raya/Inggris,3#Amerika Serikat ( Universitas Negeri),4#Amerika Serikat ( Universitas Swasta ),5#Australia,6"
+pendidikanKuliahAnak_validasiNegaraKuliah,1,Di negara manakah anak {first_name} ingin dikuliahkan?,QR,"Indonesia,1#Singapura,2#Britania Raya/Inggris,3#Amerika Serikat ( Universitas Negeri),4#Amerika Serikat ( Universitas Swasta ),5#Australia,6"
+pendidikanKuliahAnak_validasiNegaraKuliah,2,"Berapa dana yang sudah disisihkan untuk pendidikan kuliah anak {first_name} di "" + negaraKuliah + "" ?",,
+pendidikanKuliahAnak_entitasDanaSekarang,1,"Berapa dana yang sudah disisihkan untuk pendidikan kuliah anak {first_name} di "" + negaraKuliah + "" ?",,
+pendidikanKuliahAnak_validasiDanaSekarang,1,"Berapa dana yang sudah disisihkan untuk pendidikan kuliah anak {first_name} di "" + negaraKuliah + "" ?",,
+pendidikanKuliahAnak_validasiDanaSekarang,2,Untuk melanjutkan klik tombol dibawah ini ya {first_name},,
+pendidikanKuliahAnak_webView,1,Untuk melanjutkan klik tombol dibawah ini ya {first_name},,
+pendidikanKuliahAnak_validasiWebView,1,Yuk mulai investasi sekarang untuk mewujudkan target Pertumbuhan Aset {first_name} menjadi kenyataan! &split& Untuk memberikan pilihan produk investasi beserta potensi laba yang lebih akurat. {bot_name} perlu mengetahui profil resiko {first_name} terlebih dahulu melalui 4 pertanyaan singkat berikut.,,
+pendidikanKuliahAnak_validasiWebView,2,Berikut adalah ringkasan prioritas Life Goal yang telah disesuaikan dengan Profil Resiko {first_name}.,QR,Lanjut#Risk Profile
+lifeGoalLainnya_entitasJudulLifeGoal,1,Apa nih judul life goal {first_name} ?,,
+lifeGoalLainnya_validasiJudulLifeGoal,1,Apa nih judul life goal {first_name} ?,,
+lifeGoalLainnya_validasiJudulLifeGoal,2,""" + judulLifeGoal + ""? mantaaab! &split& Berapa nih kira-kira kisaran dana yang dibutuhkan {first_name}?",,
+lifeGoalLainnya_entitasKebutuhanDana,1,""" + judulLifeGoal + ""? mantaaab! &split& Berapa nih kira-kira kisaran dana yang dibutuhkan {first_name}?",,
+lifeGoalLainnya_validasiKebutuhanDana,1,""" + judulLifeGoal + ""? mantaaab! &split& Berapa nih kira-kira kisaran dana yang dibutuhkan {first_name}?",,
+lifeGoalLainnya_validasiKebutuhanDana,2,"Berapa dana yang sudah disisihkan untuk "" + judulLifeGoal + "" ?",,
+lifeGoalLainnya_entitasDanaSekarang,1,"Berapa dana yang sudah disisihkan untuk "" + judulLifeGoal + "" ?",,
+lifeGoalLainnya_validasiDanaSekarang,1,"Berapa dana yang sudah disisihkan untuk "" + judulLifeGoal + "" ?",,
+lifeGoalLainnya_validasiDanaSekarang,2,Kira-kira berapa tahun kah {first_name} ingin berinvestasi?,,
+lifeGoalLainnya_entitasLamaBerinvestasi,1,Kira-kira berapa tahun kah {first_name} ingin berinvestasi?,,
+lifeGoalLainnya_validasiLamaBerinvestasi,1,Maaf {bot_name} belum mengerti berapa tahun {first_name} akan berinvestasi &split&Kira-kira berapa tahun kah {first_name} ingin berinvestasi?,,
+lifeGoalLainnya_validasiLamaBerinvestasi,2,Untuk melanjutkan klik tombol dibawah ini ya {first_name},,
+lifeGoalLainnya_webView,1,Untuk melanjutkan klik tombol dibawah ini ya {first_name},,
+lifeGoalLainnya_validasiWebView,1,Yuk mulai investasi sekarang untuk mewujudkan target Pertumbuhan Aset {first_name} menjadi kenyataan! &split& Untuk memberikan pilihan produk investasi beserta potensi laba yang lebih akurat. {bot_name} perlu mengetahui profil resiko {first_name} terlebih dahulu melalui 4 pertanyaan singkat berikut.,,
+lifeGoalLainnya_validasiWebView,2,Berikut adalah ringkasan prioritas Life Goal yang telah disesuaikan dengan Profil Resiko {first_name}.,,
+riskProfile_entitasSumberDana,1,Sumber dana manakah yang akan {first_name} gunakan untuk berinvestasi?,QR,"Gaji,2.a#Usaha/Bisnis Pribadi,2.b#Warisan/Dari Orang Tua,2.c#Tidak ada sumber tetap,2.d"
+riskProfile_validasiSumberDana,1,"Maaf mona belum mengeti sumber dana yang kamu maksud, klik tombol di bawah ini ya {first_name} &split&Sumber dana manakah yang akan {first_name} gunakan untuk berinvestasi?",QR,"Gaji,2.a#Usaha/Bisnis Pribadi,2.b#Warisan/Dari Orang Tua,2.c#Tidak ada sumber tetap,2.d"
+riskProfile_validasiSumberDana,2,Seberapa baik kah pengetahuan {first_name} terhadap investasi?,QR,"Sangat Terbatas,3.a#Terbatas,3.b#Cukup,3.c#Mengerti,3.d#Sangat Mengerti,3.e"
+riskProfile_entitasPengetahuan,1,Seberapa baik kah pengetahuan {first_name} terhadap investasi?,QR,"Sangat Terbatas,3.a#Terbatas,3.b#Cukup,3.c#Mengerti,3.d#Sangat Mengerti,3.e"
+riskProfile_validasiPengetahuan,1,"Maaf {bot_name} belum mengeti tingkat pengetahuan yang kamu maksud, klik tombol di bawah ini ya {first_name} &split&Seberapa baik kah pengetahuan {first_name} terhadap investasi?",QR,"Sangat Terbatas,3.a#Terbatas,3.b#Cukup,3.c#Mengerti,3.d#Sangat Mengerti,3.e"
+riskProfile_validasiPengetahuan,2,Bagaimanakah {first_name} akan menggunakan keuntungan dari hasil investasi yang akan dilakukan?,,
+riskProfile_entitasPembagianHasil,1,Bagaimanakah {first_name} akan menggunakan keuntungan dari hasil investasi yang akan dilakukan?,,
+riskProfile_validasiPembagianHasil,1,"Maaf {bot_name} belum mengeti yang kamu maksud, klik tombol di bawah ini ya {first_name} &split&Bagaimanakah {first_name} akan menggunakan keuntungan dari hasil investasi yang akan dilakukan?",,
+riskProfile_validasiPembagianHasil,2,Bayangkan {first_name} telah berinvestasi Rp. 100 juta &split&Bila menimbang perbandingan antara potensi keuntungan dan kerugian &#44; skenario manakah yang lebih nyaman bagi {first_name}?,QR,"Pilih A,1#Pilih B,2#Pilih C,3#Pilih D,4#Pilih E,5"
+riskProfile_entitasSkenarioKeuntungan,1,Bayangkan {first_name} telah berinvestasi Rp. 100 juta &split&Bila menimbang perbandingan antara potensi keuntungan dan kerugian &#44; skenario manakah yang lebih nyaman bagi {first_name}?,QR,"Pilih A,1#Pilih B,2#Pilih C,3#Pilih D,4#Pilih E,5"
+riskProfile_validasiSkenarioKeuntungan,1,"Maaf {bot_name} belum mengeti yang kamu maksud, klik tombol di bawah ini ya {first_name} &split&Bayangkan {first_name} telah berinvestasi Rp. 100 juta &split&Bila menimbang perbandingan antara potensi keuntungan dan kerugian &#44; skenario manakah yang lebih nyaman bagi {first_name}?",,
+riskProfile_final,1,Profil risiko {first_name} adalah sebagai berikut :,,
+riskProfile_final,2,Mohon maaf untuk sementara sistem sedang dalam pemeliharaan,,
+transisiListProduct_webView,1,Berikut adalah ringkasan prioritas Life Goal yang telah disesuaikan dengan Profil Resiko {first_name}.,,
+transisiListProduct_final,1,Selangkah lebih dekat untuk mewujudkan Life Goal {first_name} dapat dicapai dengan berinvestasi di produk pilihan {first_name} sendiri. &split& Berikut merupakan beberapa pilihan produk investasi yang sesuai dengan profil dan prioritas {first_name},QR,Lanjut#rekomendasi product
+contactUser_entitasNama,1,Siapakah nama lengkap {first_name} sesuai dengan KTP?,,
+contactUser_validasiNama,1,"Hmm, sepertinya nama yang Kamu masukkan salah. Tolong ketik nama yang benar ya :)'  ?? &split&Siapakah nama lengkap {first_name} sesuai dengan KTP?",,
+contactUser_validasiNama,2,Alamat email {first_name}?,,
+contactUser_entitasEmail,1,Alamat email {first_name}?,,
+contactUser_validasiEmail,1,"Hmm, sepertinya alamat email yang Kamu masukkan salah. Tolong ketik nama yang benar ya :)'  ?? &split&Alamat email {first_name}?",,
+contactUser_validasiEmail,2,Ada di kota mana kah {first_name} tinggal?,,
+contactUser_entitasLokasi,1,Ada di kota mana kah {first_name} tinggal?,,
+contactUser_validasiLokasi,1,Maaf {bot_name} belum mengerti tempat tinggal {first_name} &split& Ada di kota mana kah {first_name} tinggal?,,
+contactUser_validasiLokasi,2,Berapa nomor telepon {first_name} yang bisa {bot_name} hubungi?,,
+contactUser_entitasNoTlp,1,Berapa nomor telepon {first_name} yang bisa {bot_name} hubungi?,,
+contactUser_validasiNoTlp,1,Maaf {bot_name} belum mengerti tempat tinggal {first_name} &split& Berapa nomor telepon {first_name} yang bisa {bot_name} hubungi?,,

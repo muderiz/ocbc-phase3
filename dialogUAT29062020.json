@@ -1,0 +1,663 @@
+[
+    {
+        "Step": "entitasNama",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Halo! Aku {bot_name}, penasehat keuangan pribadi Kamu &split& Sebelum kita mulai, siapa nama kamu?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "mulaiBerinvestasi_entitasSyaratDanKetentuan",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Dengan menggunakan platform MONA, Anda telah menyetujui  syarat dan ketentuan yang berlaku.",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiSyaratKetentuan",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Dengan menggunakan platform {bot_name}. {first_name} telah menyetujui syarat dan ketentuan yang berlaku.",
+        "Action": "QR",
+        "Map": "Setuju,Setuju#Tidak Setuju,Batal"
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiSyaratKetentuan",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Yay! Yuk kita mulai dengan memahami profil {first_name} terlebih dahulu sebelum kita mencoba simulasi Life Goal {first_name} sesaat lagi. &split& Berapakah umur {first_name} sekarang?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "mulaiBerinvestasi_entitasUmur",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Yay! Yuk kita mulai dengan memahami profil {first_name} terlebih dahulu sebelum kita mencoba simulasi Life Goal {first_name} sesaat lagi. &split& Berapakah umur {first_name} sekarang?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiUmur",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) {bot_name} suka banget sama semangat {first_name} yang ingin memulai investasi di usia semuda sekarang! salut! Tetapi &#44; mengingat umur {first_name} yang masih berjiwa muda banget nih &#44; ada baiknya kita memulai dengan belajar investasi terlebih dahulu ya ??",
+        "Action": "QR",
+        "Map": "Belajar Investasi, belajar berinvestasi sekarang"
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiUmur",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Maaf {first_name}, {bot_name} belum bisa mengerti umur yang Kamu maksud nih. Coba tuk masukkan angka ya &split&  Berapakah umur {first_name} sekarang?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiUmur",
+        "Index": 3,
+        "Dialog": "(UAT_Wording) Apa {first_name} sudah menikah?",
+        "Action": "QR",
+        "Map": "Belum, 0#Sudah, 1"
+    },
+    {
+        "Step": "mulaiBerinvestasi_entitasStatusPerkawinan",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Apa {first_name} sudah menikah?",
+        "Action": "QR",
+        "Map": "Belum, 0#Sudah, 1"
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiStatusPerkawinan",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Apa {first_name} sudah menikah?",
+        "Action": "QR",
+        "Map": "Belum, 0#Sudah, 1"
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiStatusPerkawinan",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Sekarang {bot_name} ingin tau kebiasaan menabung {first_name}. \\n  Berapa kisaran pendapatan bulanan {first_name} saat ini?",
+        "Action": "QR",
+        "Map": "Kurang dari Rp. 15 juta, 1#Rp. 15 juta - 35 juta, 2#Rp. 15 juta - 35 juta, 2#Lebih dari Rp. 35 juta, 3"
+    },
+    {
+        "Step": "mulaiBerinvestasi_entitasPendapatan",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Sekarang {bot_name} ingin tau kebiasaan menabung {first_name}. \\n  Berapa kisaran pendapatan bulanan {first_name} saat ini?",
+        "Action": "QR",
+        "Map": "Kurang dari Rp. 15 juta, 1#Rp. 15 juta - 35 juta, 2#Rp. 15 juta - 35 juta, 2#Lebih dari Rp. 35 juta, 3"
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiPendapatan",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Sekarang {bot_name} ingin tau kebiasaan menabung {first_name}. \\n Berapa kisaran pendapatan bulanan {first_name} saat ini?",
+        "Action": "QR",
+        "Map": "Kurang dari Rp. 15 juta, 1#Rp. 15 juta - 35 juta, 2#Rp. 15 juta - 35 juta, 2#Lebih dari Rp. 35 juta, 3"
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiPendapatan",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Berapa persen dari pendapatan {first_name} yang biasanya ditabung?",
+        "Action": "QR",
+        "Map": "Kurang dari 10%, 1#sekitar 10%-30%, 2#lebih dari 30%, 3"
+    },
+    {
+        "Step": "mulaiBerinvestasi_entitasTabungan",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Berapa persen dari pendapatan {first_name} yang biasanya ditabung?",
+        "Action": "QR",
+        "Map": "Kurang dari 10%, 1#sekitar 10%-30%, 2#lebih dari 30%, 3"
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiTabungan",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Berapa persen dari pendapatan {first_name} yang biasanya ditabung?",
+        "Action": "QR",
+        "Map": "Kurang dari 10%, 1#sekitar 10%-30%, 2#lebih dari 30%, 3"
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiTabungan",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Apakah {first_name} sudah pernah berinvestasi di reksa dana dan/atau saham sebelumnya?",
+        "Action": "QR",
+        "Map": "Belum, 0#Sudah, 1"
+    },
+    {
+        "Step": "mulaiBerinvestasi_entitasStatusInvestasi",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Apakah {first_name} sudah pernah berinvestasi di reksa dana dan/atau saham sebelumnya?",
+        "Action": "QR",
+        "Map": "Belum, 0#Sudah, 1"
+    },
+    {
+        "Step": "mulaiBerinvestasi_validasiStatusInvestasi",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Apakah {first_name} sudah pernah berinvestasi di reksa dana dan/atau saham sebelumnya?",
+        "Action": "QR",
+        "Map": "Belum, 0#Sudah, 1"
+    },
+    {
+        "Step": "pertumbuhanAset_entitasPendanaan",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Bagaimanakah {first_name} akan mendanai investasi ini?",
+        "Action": "QR",
+        "Map": "Menambah dana investasi rutin setiap bulan , 0#Lumpsum/ menempatkan dana sekali saja diawal investasi, 1"
+    },
+    {
+        "Step": "pertumbuhanAset_ValidasiPendanaan",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Maaf {first_name}&#44 {bot_name} belum bisa mengerti yang Kamu maksud nih. \\n Bagaimanakah {first_name} akan mendanai investasi ini?",
+        "Action": "QR",
+        "Map": "Menambah dana investasi rutin setiap bulan , 0#Lumpsum/ menempatkan dana sekali saja diawal investasi, 1"
+    },
+    {
+        "Step": "pertumbuhanAset_ValidasiPendanaan",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Berapa dana #pendanaan# yang {first_name} ingin investasikan?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pertumbuhanAset_entitasBesarDanaInvestasi",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Berapa dana #pendanaan# yang {first_name} ingin investasikan?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pertumbuhanAset_ValidasiBesarDanaInvestasi",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Maaf {first_name}&#44 {bot_name} belum bisa mengerti yang Kamu maksud nih. &split& Coba tuk masukkan angka ya. &split& Berapa dana #pendanaan# yang {first_name} ingin investasikan?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pertumbuhanAset_ValidasiBesarDanaInvestasi",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Kira-kira berapa tahun kah {first_name} ingin berinvestasi?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pertumbuhanAset_entitasLamaInvestasi",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Kira-kira berapa tahun kah {first_name} ingin berinvestasi?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pertumbuhanAset_ValidasiLamaInvestasi",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Maaf {first_name}, {bot_name} belum bisa mengerti yang Kamu maksud nih. Coba tuk masukkan angka ya. &split&Kira-kira berapa tahun kah {first_name} ingin berinvestasi?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pertumbuhanAset_ValidasiLamaInvestasi",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Untuk melanjutkan klik tombol dibawah ini ya {first_name}",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pertumbuhanAset_webView",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Untuk melanjutkan klik tombol dibawah ini ya {first_name}",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pertumbuhanAset_validasiWebView",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Yuk mulai investasi sekarang untuk mewujudkan target Pertumbuhan Aset {first_name} menjadi kenyataan! \\n Untuk memberikan pilihan produk investasi beserta potensi laba yang lebih akurat. {bot_name} perlu mengetahui profil resiko {first_name} terlebih dahulu melalui 4 pertanyaan singkat berikut.",
+        "Action": "QR",
+        "Map": "Lanjut#Risk Profile"
+    },
+    {
+        "Step": "pertumbuhanAset_validasiWebView",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Berikut adalah ringkasan prioritas Life Goal yang telah disesuaikan dengan Profil Resiko {first_name}.",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pendidikanKuliahAnak_entitasUsiaAnak",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Berapakah usia anak {first_name} saat ini?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pendidikanKuliahAnak_validasiUsiaAnak",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Maaf {first_name}, {bot_name} belum bisa mengerti yang Kamu maksud nih. Coba tuk masukkan angka ys. &split& Berapakah usia anak {first_name} saat ini?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pendidikanKuliahAnak_validasiUsiaAnak",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Di negara manakah anak {first_name} ingin dikuliahkan?",
+        "Action": "QR",
+        "Map": "Indonesia,1#Singapura,2#Britania Raya/Inggris,3#Amerika Serikat ( Universitas Negeri),4#Amerika Serikat ( Universitas Swasta ),5#Australia,6"
+    },
+    {
+        "Step": "pendidikanKuliahAnak_entitasNegaraKuliah",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Di negara manakah anak {first_name} ingin dikuliahkan?",
+        "Action": "QR",
+        "Map": "Indonesia,1#Singapura,2#Britania Raya/Inggris,3#Amerika Serikat ( Universitas Negeri),4#Amerika Serikat ( Universitas Swasta ),5#Australia,6"
+    },
+    {
+        "Step": "pendidikanKuliahAnak_validasiNegaraKuliah",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Di negara manakah anak {first_name} ingin dikuliahkan?",
+        "Action": "QR",
+        "Map": "Indonesia,1#Singapura,2#Britania Raya/Inggris,3#Amerika Serikat ( Universitas Negeri),4#Amerika Serikat ( Universitas Swasta ),5#Australia,6"
+    },
+    {
+        "Step": "pendidikanKuliahAnak_validasiNegaraKuliah",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Berapa dana yang sudah disisihkan untuk pendidikan kuliah anak {first_name} di #negaraKuliah# ?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pendidikanKuliahAnak_entitasDanaSekarang",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Berapa dana yang sudah disisihkan untuk pendidikan kuliah anak {first_name} di #negaraKuliah# ?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pendidikanKuliahAnak_validasiDanaSekarang",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Berapa dana yang sudah disisihkan untuk pendidikan kuliah anak {first_name} di #negaraKuliah# ?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pendidikanKuliahAnak_validasiDanaSekarang",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Untuk melanjutkan klik tombol dibawah ini ya {first_name}",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pendidikanKuliahAnak_webView",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Untuk melanjutkan klik tombol dibawah ini ya {first_name}",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pendidikanKuliahAnak_validasiWebView",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Yuk mulai investasi sekarang untuk mewujudkan target Pertumbuhan Aset {first_name} menjadi kenyataan! &split& Untuk memberikan pilihan produk investasi beserta potensi laba yang lebih akurat. {bot_name} perlu mengetahui profil resiko {first_name} terlebih dahulu melalui 4 pertanyaan singkat berikut.",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "pendidikanKuliahAnak_validasiWebView",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Berikut adalah ringkasan prioritas Life Goal yang telah disesuaikan dengan Profil Resiko {first_name}.",
+        "Action": "QR",
+        "Map": "Lanjut#Risk Profile"
+    },
+    {
+        "Step": "lifeGoalLainnya_entitasJudulLifeGoal",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Apa nih judul life goal {first_name} ?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiJudulLifeGoal",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Apa nih judul life goal {first_name} ?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiJudulLifeGoal",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) #judulLifeGoal#? mantaaab! &split& Berapa nih kira-kira kisaran dana yang dibutuhkan {first_name}?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_entitasKebutuhanDana",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) #judulLifeGoal#? mantaaab! &split& Berapa nih kira-kira kisaran dana yang dibutuhkan {first_name}?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiKebutuhanDana",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) #judulLifeGoal#? mantaaab! &split& Berapa nih kira-kira kisaran dana yang dibutuhkan {first_name}?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiKebutuhanDana",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Berapa dana yang sudah disisihkan untuk #judulLifeGoal# ?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_entitasDanaSekarang",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Berapa dana yang sudah disisihkan untuk #judulLifeGoal# ?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiDanaSekarang",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Berapa dana yang sudah disisihkan untuk #judulLifeGoal# ?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiDanaSekarang",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Kira-kira berapa tahun kah {first_name} ingin berinvestasi?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_entitasLamaBerinvestasi",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Kira-kira berapa tahun kah {first_name} ingin berinvestasi?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiLamaBerinvestasi",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Maaf {bot_name} belum mengerti berapa tahun {first_name} akan berinvestasi &split&Kira-kira berapa tahun kah {first_name} ingin berinvestasi?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiLamaBerinvestasi",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Untuk melanjutkan klik tombol dibawah ini ya {first_name}",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_webView",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Untuk melanjutkan klik tombol dibawah ini ya {first_name}",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiWebView",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Yuk mulai investasi sekarang untuk mewujudkan target Pertumbuhan Aset {first_name} menjadi kenyataan! &split& Untuk memberikan pilihan produk investasi beserta potensi laba yang lebih akurat. {bot_name} perlu mengetahui profil resiko {first_name} terlebih dahulu melalui 4 pertanyaan singkat berikut.",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "lifeGoalLainnya_validasiWebView",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Berikut adalah ringkasan prioritas Life Goal yang telah disesuaikan dengan Profil Resiko {first_name}.",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "riskProfile_entitasSumberDana",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Sumber dana manakah yang akan {first_name} gunakan untuk berinvestasi?",
+        "Action": "QR",
+        "Map": "Gaji,2.a#Usaha/Bisnis Pribadi,2.b#Warisan/Dari Orang Tua,2.c#Tidak ada sumber tetap,2.d"
+    },
+    {
+        "Step": "riskProfile_validasiSumberDana",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Maaf mona belum mengeti sumber dana yang kamu maksud, klik tombol di bawah ini ya {first_name} \\n Sumber dana manakah yang akan {first_name} gunakan untuk berinvestasi?",
+        "Action": "QR",
+        "Map": "Gaji,2.a#Usaha/Bisnis Pribadi,2.b#Warisan/Dari Orang Tua,2.c#Tidak ada sumber tetap,2.d"
+    },
+    {
+        "Step": "riskProfile_validasiSumberDana",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Seberapa baik kah pengetahuan {first_name} terhadap investasi?",
+        "Action": "QR",
+        "Map": "Sangat Terbatas,3.a#Terbatas,3.b#Cukup,3.c#Mengerti,3.d#Sangat Mengerti,3.e"
+    },
+    {
+        "Step": "riskProfile_entitasPengetahuan",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Seberapa baik kah pengetahuan {first_name} terhadap investasi?",
+        "Action": "QR",
+        "Map": "Sangat Terbatas,3.a#Terbatas,3.b#Cukup,3.c#Mengerti,3.d#Sangat Mengerti,3.e"
+    },
+    {
+        "Step": "riskProfile_validasiPengetahuan",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Maaf {bot_name} belum mengeti tingkat pengetahuan yang kamu maksud, klik tombol di bawah ini ya {first_name} \\n Seberapa baik kah pengetahuan {first_name} terhadap investasi?",
+        "Action": "QR",
+        "Map": "Sangat Terbatas,3.a#Terbatas,3.b#Cukup,3.c#Mengerti,3.d#Sangat Mengerti,3.e"
+    },
+    {
+        "Step": "riskProfile_validasiPengetahuan",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Bagaimanakah {first_name} akan menggunakan keuntungan dari hasil investasi yang akan dilakukan?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "riskProfile_entitasPembagianHasil",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Bagaimanakah {first_name} akan menggunakan keuntungan dari hasil investasi yang akan dilakukan?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "riskProfile_validasiPembagianHasil",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Maaf {bot_name} belum mengeti yang kamu maksud, klik tombol di bawah ini ya {first_name} &split&Bagaimanakah {first_name} akan menggunakan keuntungan dari hasil investasi yang akan dilakukan?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "riskProfile_validasiPembagianHasil",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Bayangkan {first_name} telah berinvestasi Rp. 100 juta \\nBila menimbang perbandingan antara potensi keuntungan dan kerugian &#44; skenario manakah yang lebih nyaman bagi {first_name}?",
+        "Action": "QR",
+        "Map": "Pilih A,1#Pilih B,2#Pilih C,3#Pilih D,4#Pilih E,5"
+    },
+    {
+        "Step": "riskProfile_entitasSkenarioKeuntungan",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Bayangkan {first_name} telah berinvestasi Rp. 100 juta \\nBila menimbang perbandingan antara potensi keuntungan dan kerugian &#44; skenario manakah yang lebih nyaman bagi {first_name}?",
+        "Action": "QR",
+        "Map": "Pilih A,1#Pilih B,2#Pilih C,3#Pilih D,4#Pilih E,5"
+    },
+    {
+        "Step": "riskProfile_validasiSkenarioKeuntungan",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Maaf {bot_name} belum mengeti yang kamu maksud, klik tombol di bawah ini ya {first_name} \\nBayangkan {first_name} telah berinvestasi Rp. 100 juta &split&Bila menimbang perbandingan antara potensi keuntungan dan kerugian &#44; skenario manakah yang lebih nyaman bagi {first_name}?",
+        "Action": "QR",
+        "Map": "Pilih A,1#Pilih B,2#Pilih C,3#Pilih D,4#Pilih E,5"
+    },
+    {
+        "Step": "riskProfile_final",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Profil risiko {first_name} adalah sebagai berikut :",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "riskProfile_final",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Mohon maaf untuk sementara sistem sedang dalam pemeliharaan",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "transisiListProduct_webView",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Berikut adalah ringkasan prioritas Life Goal yang telah disesuaikan dengan Profil Resiko {first_name}.",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "transisiListProduct_final",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Selangkah lebih dekat untuk mewujudkan Life Goal {first_name} dapat dicapai dengan berinvestasi di produk pilihan {first_name} sendiri. \\n Berikut merupakan beberapa pilihan produk investasi yang sesuai dengan profil dan prioritas {first_name}",
+        "Action": "QR",
+        "Map": "Lanjut#rekomendasi product"
+    },
+    {
+        "Step": "contactUser_entitasNama",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Siapakah nama lengkap {first_name} sesuai dengan KTP?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiNama",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Hmm, sepertinya nama yang Kamu masukkan salah. Tolong ketik nama yang benar ya :)'  ?? &split&Siapakah nama lengkap {first_name} sesuai dengan KTP?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiNama",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Alamat email {first_name}?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_entitasEmail",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Alamat email {first_name}?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiEmail",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Hmm, sepertinya alamat email yang Kamu masukkan salah. Tolong ketik nama yang benar ya :)'  ?? &split&Alamat email {first_name}?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiEmail",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Ada di kota mana kah {first_name} tinggal?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_entitasLokasi",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Ada di kota mana kah {first_name} tinggal?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiLokasi",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Maaf {bot_name} belum mengerti tempat tinggal {first_name} &split& Ada di kota mana kah {first_name} tinggal?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiLokasi",
+        "Index": 2,
+        "Dialog": "(UAT_Wording) Berapa nomor telepon {first_name} yang bisa {bot_name} hubungi?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_entitasNoTlp",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Berapa nomor telepon {first_name} yang bisa {bot_name} hubungi?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiNoTlp",
+        "Index": 1,
+        "Dialog": "(UAT_Wording) Maaf {bot_name} belum mengerti Nomor Telepon {first_name} &split& Berapa nomor telepon {first_name} yang bisa {bot_name} hubungi?",
+        "Action": "",
+        "Map": ""
+    },
+    {
+        "Step": "contactUser_validasiNoTlp",
+        "Index": 2,
+        "Dialog": "valiasi 2",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "belajarBerinvestasi_jenisProfilRisiko",
+        "Index": 1,
+        "Dialog": "Conservative \\n - main aman bikin hati kamu tenang \\n - punya mindset gak papa deh gak untung-untung banget, yang penting gak rugi \\n - produk investasi yang bikin hati kamu tentram adalah Reksa Dana Pasar Uang (RDPU)",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "belajarBerinvestasi_jenisProfilRisiko",
+        "Index": 2,
+        "Dialog": "Balance \\n - kamu cenderung hati-hati terhadap risiko \\n - mulai cari-cari untung lebih dari investasi yang jangka menengah \\n - produk yang pas buat kamu biasanya Reksa Dana Pasar Uang (RDPU), Reksa Dana Pendapatan Tetap (RDPT), dan Reksa Dana Campuran",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "belajarBerinvestasi_jenisProfilRisiko",
+        "Index": 3,
+        "Dialog": "Growth \\n - kamu mau untung lebih besar \\n - kamu juga sadar, investasi kamu agak moderat risikonya \\n - produk investasi yang kamu banget adalah reksa dana campuran dan reksa dana saham",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "belajarBerinvestasi_jenisProfilRisiko",
+        "Index": 4,
+        "Dialog": "Aggressive \\n - go big or go home adalah prinsip kamu \\n - kamu pengen untung yang besar, tapi kamu juga sadar higher return ya pasti higher risk. \\n - produk investasi yang kamu banget adalah reksa dana saham",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "belajarBerinvestasi_jenisProfilRisiko",
+        "Index": 5,
+        "Dialog": "Highly Aggressive \\n - kamu sangat paham soal kondisi pasar keuangan dan produk investasi \\n - untung besar adalah semangat kamu dan kamu santai dengan fluktuasi pasar jangka menengah dan pendek",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "belajarBerinvestasi_pertanyaanUser4",
+        "Index": 1,
+        "Dialog": "Ada kok investasi buat pemula yang murah meriah &split&Reksa dana aja sekarang bisa mulai dari 25 ribu! Lebih murah dari pada jajan boba kan?",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "belajarBerinvestasi_pertanyaanUser4",
+        "Index": 2,
+        "Dialog": "Tinggal kamu aja yang komit dan konsisten investasi tiap bulan.",
+        "Action": "QR",
+        "Map": "Oke!Aku siap!,aku siap"
+    }, 
+    {
+        "Step": "belajarBerinvestasi_pertanyaanUser4",
+        "Index": 3,
+        "Dialog": "Tenang! Ada 2 Tips lagi untuk manage resiko investasi&split&Tips #1 adalah diversifikasi. Jadi jangan hanya investasi di satu jenis instrumen, tapi disebar ke beberapa jenis instrumen lainnya.&split&Jadi, kalau ada satu jenis instrumen yang kinerjanya jelek, kamu masih punya cadangan instrumen lainnya.",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "belajarBerinvestasi_pertanyaanUser4",
+        "Index": 4,
+        "Dialog": "Jadi resiko kerugiannya berkurang deh.",
+        "Action": "QR",
+        "Map": "Terus apa lagi tipsnya?,terus apa lagi tipsnya"
+    }
+]
+
+
+
