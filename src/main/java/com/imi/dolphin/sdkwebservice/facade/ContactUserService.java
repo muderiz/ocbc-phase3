@@ -156,9 +156,12 @@ public class ContactUserService {
     }
 
     /**
+     * mengembalikan extensionResult dengan nilai output sebagai jawaban dari
+     * bot
      *
-     * @param extensionRequest
-     * @return
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return json dengan format class extensionResult
      */
     public ExtensionResult contactUser_entitasStatusNasabah(ExtensionRequest extensionRequest) {
         log.debug("contactUser_entitasStatusNasabah() extension request: {}", extensionRequest);
@@ -175,9 +178,11 @@ public class ContactUserService {
     }
 
     /**
+     * Digunakan untuk memvalidasi Status Nasabah
      *
-     * @param extensionRequest
-     * @return
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return json dengan format class extensionResult
      */
     public ExtensionResult contactUser_validasiStatusNasabah(ExtensionRequest extensionRequest) {
         log.debug("contactUser_validasiStatusNasabah() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
@@ -823,7 +828,8 @@ public class ContactUserService {
         ButtonTemplate buttonTemplate = new ButtonTemplate();
         buttonTemplate.setTitle(appProperties.getOcbc_carousel_title_download());
 //        buttonTemplate.setSubTitle(report_code + ".pdf");
-        buttonTemplate.setSubTitle(bubble = dialogUtil.CreateBubble("Ringkasan_send_PDF", 3, null));
+        String subtitle = dialogUtil.CreateBubble("Ringkasan_send_PDF", 3, null);
+        buttonTemplate.setSubTitle(subtitle);
         Map<String, String> output = new HashMap<>();
         buttonTemplate.setPictureLink(appProperties.getOcbc_carousel_gambar_download());
         buttonTemplate.setPicturePath(appProperties.getOcbc_carousel_gambar_download());
@@ -887,6 +893,13 @@ public class ContactUserService {
         return extensionResult;
     }
 
+    /**
+     * Menampilkan Response Bot terakhir disesuaikan dengan Status nasabah user
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult berupa Json
+     */
     public ExtensionResult contactUser_afterFinal(ExtensionRequest extensionRequest) {
         String status_nasabah = dialogUtil.getEasyMapValueByName(extensionRequest, "status_nasabah");
         Map<String, String> output = new HashMap<>();
@@ -908,7 +921,8 @@ public class ContactUserService {
             List<EasyMap> actions = new ArrayList<>();
             EasyMap bookAction = new EasyMap();
             bookAction.setName("Download Here!");
-            bookAction.setValue(appProperties.getOCBC_LINK_ONEMOBILE());
+            String valuebutton = dialogUtil.CreateBubble("contactUser_AfterReportSudahNasabah", 5, null);
+            bookAction.setValue(valuebutton);
             actions.add(bookAction);
             button.setButtonValues(actions);
             ButtonBuilder buttonBuilder = new ButtonBuilder(button);
@@ -936,7 +950,8 @@ public class ContactUserService {
             List<EasyMap> actions = new ArrayList<>();
             EasyMap bookAction = new EasyMap();
             bookAction.setName("Join Here!");
-            bookAction.setValue(appProperties.getOCBC_LINK_DAFTARNASABAH());
+            String valuebutton = dialogUtil.CreateBubble("contactUser_AfterReportBelumNasabah", 7, null);
+            bookAction.setValue(valuebutton);
             actions.add(bookAction);
             button.setButtonValues(actions);
             ButtonBuilder buttonBuilder = new ButtonBuilder(button);

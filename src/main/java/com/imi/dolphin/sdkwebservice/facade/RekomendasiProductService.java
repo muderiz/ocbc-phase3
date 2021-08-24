@@ -80,6 +80,14 @@ public class RekomendasiProductService {
 
     private String bubble = "";
 
+    /**
+     * Untuk memvalidasi inputan user dan membedakan apakah user sudah tau
+     * Reksadana atau belum
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return json dengan format class extensionResult
+     */
     public ExtensionResult rekomendasiProduct_belumtauReksadana(ExtensionRequest extensionRequest) {
         Map<String, String> output = new HashMap<>();
         Map<String, String> clearEntities = new HashMap<>();
@@ -94,6 +102,7 @@ public class RekomendasiProductService {
         extensionResult.setNext(true);
         if (clearEntities.get("pertanyaan_reksadana").equalsIgnoreCase("sudah")) {
             clearEntities.put("belumtau_reksadana", "lanjut");
+            clearEntities.put("belumtau_reksadana2", "lanjut");
             CarouselBuilder carouselBuilder = rekomendasiProduct_outputCarousel(extensionRequest);
             bubble = dialogUtil.CreateBubble("rekomendasiProduct_belumtauReksadana", 2, null);
 
@@ -248,7 +257,7 @@ public class RekomendasiProductService {
                             log.debug("rekomendasiProduct_carousel() futureValueResponse |=======|||debug|||=======| body futureValueResponse : {}", new Gson().toJson(futureValueResponse, CalculatorResponseBody.class));
                             //===========================================================================================
 
-                            pesan = pesan.replace("#result#", "<b>" + new DecimalFormat("IDR ###,###", DecimalFormatSymbols.getInstance(Locale.ITALY)).format(futureValueResponse.Result) + "</b>")
+                            pesan = pesan.replace("#result#", "<b>" + new DecimalFormat("IDR ###,###", DecimalFormatSymbols.getInstance(Locale.ENGLISH)).format(futureValueResponse.Result) + "</b>")
                                     .replace("#rate#", futureValueResponse.Rate);
 
                             //===========================================================================================
@@ -330,7 +339,7 @@ public class RekomendasiProductService {
                             pesan = pesan.replace("#first_name#", transaction_Data.Name)
                                     .replace("#result#", new DecimalFormat(
                                             "IDR ###,###",
-                                            DecimalFormatSymbols.getInstance(Locale.ITALY)).
+                                            DecimalFormatSymbols.getInstance(Locale.ENGLISH)).
                                             format(futureValueResponse.Result))
                                     .replace("#rate#", futureValueResponse.Rate);
 
@@ -432,7 +441,7 @@ public class RekomendasiProductService {
                             //===========================================================================================
 
                             pesan = pesan.replace("#result#", new DecimalFormat("IDR ###,###",
-                                    DecimalFormatSymbols.getInstance(Locale.ITALY)).format(presentValueResponse.Result))
+                                    DecimalFormatSymbols.getInstance(Locale.ENGLISH)).format(presentValueResponse.Result))
                                     .replace("#rate#", presentValueResponse.Rate);
 
                             //===========================================================================================
@@ -532,7 +541,7 @@ public class RekomendasiProductService {
                             //===========================================================================================
 
                             pesan = pesan.replace("#result#", new DecimalFormat("IDR ###,###",
-                                    DecimalFormatSymbols.getInstance(Locale.ITALY)).format(targetValueResponse.Result))
+                                    DecimalFormatSymbols.getInstance(Locale.ENGLISH)).format(targetValueResponse.Result))
                                     .replace("#rate#", targetValueResponse.Rate);
 
                             //===========================================================================================
@@ -789,13 +798,25 @@ public class RekomendasiProductService {
         // value 2 = Pendidikan Kuliah Anak
         // value 3 = Lainnya
         // value 3 = Tidak Tahu
+        String[] depositosplit = data[1].split("_");
+        String splitdeposito = depositosplit[0];
+
+        String[] takasplit = data[1].split(" ");
+        String splittaka = takasplit[0];
+
+        if (splitdeposito.equalsIgnoreCase("Deposito")) {
+            data[1] = splitdeposito;
+        } else if (splittaka.equalsIgnoreCase("Taka")) {
+            data[1] = splittaka;
+
+        }
 
         int life_goal_id = dataLeads1.getTransaction_Data()[0].getLife_Goal_ID();
 
         if (data[0].toLowerCase().contains("lainnya")) {
 
             if (dataLeads1.getTransaction_Data()[0].getLife_Goal_ID() == 1) {
-                respBuilder.append("Produk : " + data[1] + " \n"
+                respBuilder.append("Produk : " + data[1].toUpperCase() + " \n"
                         + "Target/ estimasi pertumbuhan aset hingga : IDR " + validationMethod.replaceSparatorRp(data[2]) + " \n"
                         + "Estimasi return per tahun : " + data[3] + " \n");
                 rekom_terget_amount = Long.parseLong(data[2]);
@@ -809,7 +830,7 @@ public class RekomendasiProductService {
                     mode = "Lumpsum";
                 }
                 data[2] = data[2].replace("Pertama", "Awal").replace("pertama", "Awal");
-                respBuilder.append("Produk : " + data[1] + " \n"
+                respBuilder.append("Produk : " + data[1].toUpperCase() + " \n"
                         + "Mode : " + data[2] + " \n"
                         + "Jumlah : IDR " + validationMethod.replaceSparatorRp(data[3]) + " \n"
                         + "Estimasi return per tahun : " + data[4] + " \n");
@@ -833,7 +854,7 @@ public class RekomendasiProductService {
                 estimasi_laba = data[2] + "%";
             }
             if (dataLeads1.getTransaction_Data()[0].getLife_Goal_ID() == 1) {
-                respBuilder.append("Produk : " + data[1] + " \n"
+                respBuilder.append("Produk : " + data[1].toUpperCase() + " \n"
                         + "Target/ estimasi pertumbuhan aset hingga : IDR " + validationMethod.replaceSparatorRp(data[6]) + " \n"
                         + "Estimasi return per tahun :  " + estimasi_laba + "\n");
 //                if ("false".equalsIgnoreCase(data[5])) {
@@ -852,7 +873,7 @@ public class RekomendasiProductService {
                     investment_Type = "1";
                     mode = "Lumpsum";
                 }
-                respBuilder.append("Produk : " + data[1] + " \n"
+                respBuilder.append("Produk : " + data[1].toUpperCase() + " \n"
                         + "Mode : " + mode + " \n"
                         + "Jumlah : IDR " + validationMethod.replaceSparatorRp(data[6]) + " \n"
                         + "Estimasi return per tahun :  " + estimasi_laba + "\n");
@@ -930,6 +951,13 @@ public class RekomendasiProductService {
         return respBuilder.toString();
     }
 
+    /**
+     * Untuk validasi inputan user setelah memilih Rekomendasi Product
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return json dengan format class extensionResult
+     */
     public ExtensionResult validasi_konfirmasiRekomendasiProduk(ExtensionRequest extensionRequest) {
         log.debug("validasi_konfirmasiRekomendasiProduk() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
         ExtensionResult extensionResult = new ExtensionResult();
@@ -1000,6 +1028,14 @@ public class RekomendasiProductService {
         return extensionResult;
     }
 
+    /**
+     * Untuk menampilkan pertanyaan terakhir yang akan langsung direct ke dialog
+     * Get Contact User
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return json dengan format class extensionResult
+     */
     public ExtensionResult beforefinal_konfirmasi_rekomendasiproduk(ExtensionRequest extensionRequest) {
         ExtensionResult extensionResult = new ExtensionResult();
         extensionResult.setAgent(false);

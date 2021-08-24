@@ -60,6 +60,13 @@ public class LifeGoalLiburanService {
 
     private String bubble = "";
 
+    /**
+      * Untuk memvalidasi inputan User
+     * 
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult berupa Json
+     */
     public ExtensionResult lifeGoalLiburan_validasiJudulLifeGoal(ExtensionRequest extensionRequest) {
         log.debug("lifeGoalLainnya_validasiJudulLifeGoal(() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
         ExtensionResult extensionResult = new ExtensionResult();

@@ -305,9 +305,10 @@ public class PertumbuhanAsetService {
 //        return extensionResult;
 //    }
     /**
+     * mengembalikan hasil String berupa validasi Lama Investasi
      *
-     * @param inputUser
-     * @return
+     * @param inputUser berisi tahun yang diketikan user
+     * @return String konverterTahun
      */
     public String konverterTahun(String inputUser) {
 
@@ -406,6 +407,15 @@ public class PertumbuhanAsetService {
 
     }
 
+    /**
+     * key output digunkan untuk menampilkan response dari bot sesuai dengan
+     * jawaban yang telah di set didalam file dialog
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult mengirimkan json dengan format class
+     * extensionResult
+     */
     public ExtensionResult pertumbuhanAset_ValidasiLamaInvestasi(ExtensionRequest extensionRequest) {
         userToken = svcDolphinService.getUserToken(userToken);
         String contactId = extensionRequest.getIntent().getTicket().getContactId();

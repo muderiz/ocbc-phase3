@@ -72,6 +72,14 @@ public class Phase2BelajarBerinvestasiService {
 
     private String bubble = "";
 
+    /**
+     * Digunakan Untuk melakukan validasi terhadap inputan user
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult mengirimkan json dengan format class
+     * extensionResult
+     */
     public ExtensionResult belajarBerinvestasi_validasiPertaanyaanUser(ExtensionRequest extensionRequest) {
         log.debug("belajarBerinvestasi_validasiPertaanyaanUser() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
         ExtensionResult extensionResult = new ExtensionResult();
@@ -91,6 +99,14 @@ public class Phase2BelajarBerinvestasiService {
         return extensionResult;
     }
 
+    /**
+     * Digunakan Untuk melakukan validasi terhadap inputan user
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult mengirimkan json dengan format class
+     * extensionResult
+     */
     public ExtensionResult belajarBerinvestasi_validasiTujuanInvestasi(ExtensionRequest extensionRequest) {
         log.debug("belajarBerinvestasi_validasiTujuanInvestasi() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
         ExtensionResult extensionResult = new ExtensionResult();
@@ -112,6 +128,14 @@ public class Phase2BelajarBerinvestasiService {
         return extensionResult;
     }
 
+    /**
+     * Digunakan Untuk melakukan validasi terhadap inputan user
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult mengirimkan json dengan format class
+     * extensionResult
+     */
     public ExtensionResult belajarBerinvestasi_validasiPertaanyaanUser2(ExtensionRequest extensionRequest) {
         log.debug("belajarBerinvestasi_validasiPertaanyaanUser2() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
         ExtensionResult extensionResult = new ExtensionResult();
@@ -133,6 +157,14 @@ public class Phase2BelajarBerinvestasiService {
         return extensionResult;
     }
 
+    /**
+     * Digunakan Untuk menampilkan key output berupa response Bot
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult mengirimkan json dengan format class
+     * extensionResult
+     */
     public ExtensionResult belajarBerinvestasi_jenisProfilRisiko(ExtensionRequest extensionRequest) {
         log.debug("belajarBerinvestasi_jenisProfilRisiko() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
         ExtensionResult extensionResult = new ExtensionResult();
@@ -172,6 +204,14 @@ public class Phase2BelajarBerinvestasiService {
         return extensionResult;
     }
 
+    /**
+     * Digunakan Untuk melakukan validasi terhadap inputan user
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult mengirimkan json dengan format class
+     * extensionResult
+     */
     public ExtensionResult belajarBerinvestasi_validasiJawabanProfilResiko(ExtensionRequest extensionRequest) {
         log.debug("belajarBerinvestasi_validasiJawabanProfilResiko() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
         ExtensionResult extensionResult = new ExtensionResult();
@@ -212,6 +252,14 @@ public class Phase2BelajarBerinvestasiService {
         return extensionResult;
     }
 
+    /**
+     * Digunakan Untuk melakukan validasi terhadap inputan user
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult mengirimkan json dengan format class
+     * extensionResult
+     */
     public ExtensionResult belajarBerinvestasi_validasiPertanyaanUser3(ExtensionRequest extensionRequest) {
         log.debug("belajarBerinvestasi_validasiPertanyaanUser3() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
         ExtensionResult extensionResult = new ExtensionResult();
@@ -245,6 +293,13 @@ public class Phase2BelajarBerinvestasiService {
         return extensionResult;
     }
 
+    /**
+     * Digunakan untuk memperoleh rekomendasi product yang sesuai dengan data
+     * yang dimiliki oleh user
+     *
+     * @return CarouselBuilder berupa sting untuk menampilkan rekomendasi
+     * product berdasarkan data yang dimiliki oleh user
+     */
     public ButtonBuilder belajarBerinvestasi_getCarouselQuotes() {
 //        String DIR = "/var/www/html/pictures/do_not_delete";
         String DIR = appProperties.getOCBC_PICTURES_QUOTES();
@@ -289,6 +344,13 @@ public class Phase2BelajarBerinvestasiService {
         return buttonBuilder;
     }
 
+    /**
+     * mengembalikan hasil String berupa Judul file
+     *
+     *
+     * @param banyak berisi jumlah file
+     * @return String judul quotes
+     */
     public static String hitungRandomStringDesktop(int banyak) {
         String gambar = "";
         int judul = 0;
@@ -300,6 +362,13 @@ public class Phase2BelajarBerinvestasiService {
         return gambar;
     }
 
+    /**
+     * mengembalikan hasil String berupa Judul file
+     *
+     *
+     * @param banyak berisi jumlah file
+     * @return String judul quotes
+     */
     public static String hitungRandomStringMobile(int banyak) {
         String gambar = "";
         int judul = 0;
@@ -311,6 +380,14 @@ public class Phase2BelajarBerinvestasiService {
         return gambar;
     }
 
+    /**
+     * Digunakan Untuk melakukan validasi terhadap inputan user
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult mengirimkan json dengan format class
+     * extensionResult
+     */
     public ExtensionResult belajarBerinvestasi_validasiJawabanBerani(ExtensionRequest extensionRequest) {
         log.debug("belajarBerinvestasi_validasiJawabanBerani() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
         ExtensionResult extensionResult = new ExtensionResult();
@@ -340,6 +417,14 @@ public class Phase2BelajarBerinvestasiService {
         return extensionResult;
     }
 
+    /**
+     * Digunakan Untuk melakukan validasi terhadap inputan user
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult mengirimkan json dengan format class
+     * extensionResult
+     */
     public ExtensionResult belajarBerinvestasi_validasiFinalBelajarBerinvestasiSatu(ExtensionRequest extensionRequest) {
         log.debug("belajarBerinvestasi_validasiFinalBelajarBerinvestasiSatu() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
         ExtensionResult extensionResult = new ExtensionResult();
@@ -360,6 +445,14 @@ public class Phase2BelajarBerinvestasiService {
         return extensionResult;
     }
 
+    /**
+     * Digunakan Untuk menampilkan response bot
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult mengirimkan json dengan format class
+     * extensionResult
+     */
     public ExtensionResult belajarBerinvestasi_pertanyaanUser4(ExtensionRequest extensionRequest) {
         log.debug("belajarBerinvestasi_pertanyaanUser4() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
         ExtensionResult extensionResult = new ExtensionResult();
@@ -392,6 +485,14 @@ public class Phase2BelajarBerinvestasiService {
         return extensionResult;
     }
 
+    /**
+     * Digunakan Untuk melakukan validasi terhadap inputan user
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult mengirimkan json dengan format class
+     * extensionResult
+     */
     public ExtensionResult belajarBerinvestasi_validasiPertanyaanUser4(ExtensionRequest extensionRequest) {
         log.debug("belajarBerinvestasi_validasiPertanyaanUser4() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
         ExtensionResult extensionResult = new ExtensionResult();
@@ -421,6 +522,14 @@ public class Phase2BelajarBerinvestasiService {
         return extensionResult;
     }
 
+    /**
+     * Digunakan Untuk melakukan validasi terhadap inputan user
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult mengirimkan json dengan format class
+     * extensionResult
+     */
     public ExtensionResult belajarBerinvestasi_validasiFinalBelajarBerinvestasiDua(ExtensionRequest extensionRequest) {
         log.debug("belajarBerinvestasi_validasiFinalBelajarBerinvestasiDua() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
         ExtensionResult extensionResult = new ExtensionResult();
@@ -441,6 +550,14 @@ public class Phase2BelajarBerinvestasiService {
         return extensionResult;
     }
 
+    /**
+     * Digunakan Untuk melakukan validasi terhadap inputan user
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult mengirimkan json dengan format class
+     * extensionResult
+     */
     public ExtensionResult belajarBerinvestasi_validasiPertanyaanUser5(ExtensionRequest extensionRequest) {
         log.debug("belajarBerinvestasi_validasiPertanyaanUser5() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
         ExtensionResult extensionResult = new ExtensionResult();
@@ -467,6 +584,14 @@ public class Phase2BelajarBerinvestasiService {
         return extensionResult;
     }
 
+    /**
+     * Digunakan Untuk melakukan validasi terhadap inputan user
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult mengirimkan json dengan format class
+     * extensionResult
+     */
     public ExtensionResult belajarBerinvestasi_validasiFinalBelajarBerinvestasiTiga(ExtensionRequest extensionRequest) {
         log.debug("belajarBerinvestasi_validasiFinalBelajarBerinvestasiTiga() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
         ExtensionResult extensionResult = new ExtensionResult();

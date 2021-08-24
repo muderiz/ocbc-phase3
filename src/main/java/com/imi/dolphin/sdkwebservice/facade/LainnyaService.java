@@ -365,6 +365,12 @@ public class LainnyaService {
 //        return extensionResult;
 //    }
 //   
+    /**
+     * mengembalikan hasil String berupa validasi Lama Investasi
+     *
+     * @param inputUser berisi tahun yang diketikan user
+     * @return String konverterTahun
+     */
     public String konverterTahun(String inputUser) {
         String inputanUser = inputUser.toLowerCase();
 
@@ -460,6 +466,13 @@ public class LainnyaService {
         return hasil;
     }
 
+    /**
+     * Untuk melakakukan validasi Lama Investasi
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult berupa Json
+     */
     public ExtensionResult lifeGoalLainnya_validasiLamaBerinvestasi(ExtensionRequest extensionRequest) {
         log.debug("lifeGoalLainnya_validasiLamaBerinvestasi() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
         ExtensionResult extensionResult = new ExtensionResult();

@@ -336,9 +336,12 @@ public class PendidikanService {
 //        return extensionResult;
 //    }
     /**
+     * key output digunkan untuk menampilkan response dari bot sesuai dengan
+     * jawaban yang telah di set didalam file dialog
      *
-     * @param extensionRequest
-     * @return
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult json dengan format kelas ExtensionResult
      */
     public ExtensionResult pendidikanKuliahAnak_validasiDanaSekarang(ExtensionRequest extensionRequest) {
         log.debug("pendidikanKuliahAnak_validasiDanaSekarang() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));

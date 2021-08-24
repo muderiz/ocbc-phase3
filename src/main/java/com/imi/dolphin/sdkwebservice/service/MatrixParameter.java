@@ -187,7 +187,7 @@ public class MatrixParameter {
         Map<String, String> param = new LinkedHashMap<>();
         if (lifeGoalId == 1) {//Pertumbuhan Aset
             if ("0".equals(investmentType)) {//Monthly
-                if (Tenor > 3) {
+                if (Tenor > 36) {
                     if (investmentAmount >= 8000000) {
                         param.put("List_Product_Type", "MFA");
                         param.put("MFA_List", "3");
@@ -205,7 +205,7 @@ public class MatrixParameter {
                     }
                 }
             } else {//Lumpsum
-                if (Tenor > 3) {
+                if (Tenor > 36) {
                     if (investmentAmount >= 8000000) {
                         param.put("List_Product_Type", "MFA,DP");
                         param.put("MFA_List", "2");
@@ -224,7 +224,7 @@ public class MatrixParameter {
                 }
             }
         } else {//Pendidikan & Life Goal Lainnya
-            if (Tenor > 3) {
+            if (Tenor > 36) {
                 if (investmentAmount >= 8000000) {
                     param.put("List_Product_Type", "MFA,DP");
                     param.put("MFA_List", "2");

@@ -70,8 +70,15 @@ public class WPPService {
             objCalcResBody = gson.fromJson(response.body().string(), CalculatorResponseBody.class);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        } catch (IOException e) {
+
+            objCalcResBody.RC = -1;
+            return objCalcResBody;
+
+        } catch (Exception e) {
             e.printStackTrace();
+            objCalcResBody.RC = -1;
+            return objCalcResBody;
+
         }
         return objCalcResBody;
     }

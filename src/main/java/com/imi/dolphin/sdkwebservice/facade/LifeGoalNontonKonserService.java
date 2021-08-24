@@ -30,6 +30,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class LifeGoalNontonKonserService {
+
     private static final Logger log = LogManager.getLogger(ServiceImp.class);
 
     private static final DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
@@ -57,7 +58,14 @@ public class LifeGoalNontonKonserService {
     ValidationMethod validationMethod;
 
     private String bubble = "";
-    
+
+    /**
+     * Untuk memvalidasi inputan User
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult berupa Json
+     */
     public ExtensionResult lifeGoalNontonKonser_validasiJudulLifeGoal(ExtensionRequest extensionRequest) {
         log.debug("lifeGoalLainnya_validasiJudulLifeGoal(() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
         ExtensionResult extensionResult = new ExtensionResult();

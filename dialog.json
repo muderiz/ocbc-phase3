@@ -163,7 +163,7 @@
     {
         "Step": "pertumbuhanAset_entitasPendanaan",
         "Index": 1,
-        "Dialog": "Ada 2 cara investasi nih, yaitu nambahin dana tiap bulan atau tempain dana sekali di awal aja &split& Tips: kalau mau memperkecil resiko, kamu bisa nambahin dana tiap bulan aja",
+        "Dialog": "Ada 2 cara investasi nih, yaitu nambahin dana tiap bulan atau tempatin dana sekali di awal aja &split& Tips: kalau mau memperkecil resiko, kamu bisa nambahin dana tiap bulan aja",
         "Action": "",
         "Map": ""
     },
@@ -513,7 +513,7 @@
     {
         "Step": "riskProfile_validasiStatusInvestasi",
         "Index": 3,
-        "Dialog": "Siap! Aku bakal bantu kamu cari tau risk profile kamu!&split&Risk profile ini menentukan seberapa tahannya kamu terhadap risiko investasi yang pasti selalu ada.&split&Yuk! Aku bantu cek dengan 4 aja pertanyaan aja kokk… gak ada benar salah di sini. Jawab aja yang kamu bgt. ",
+        "Dialog": "Siap! Aku bakal bantu kamu cari tau risk profile kamu!&split&Risk profile ini menentukan seberapa tahannya kamu terhadap risiko investasi yang pasti selalu ada.&split&Yuk! Aku bantu cek dengan 4 aja pertanyaan aja kokk… gak ada benar salah di sini. Jawab aja yang kamu banget. ",
         "Action": "",
         "Map": ""
     }, 
@@ -945,6 +945,13 @@
         "Map": ""
     }, 
     {
+        "Step": "contactUser_AfterReportSudahNasabah",
+        "Index": 5,
+        "Dialog": "https://onemobile.onelink.me/JAr5/5bdbd952",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
         "Step": "contactUser_AfterReportBelumNasabah",
         "Index": 1, 
         "Dialog": "Untuk eskekusi Investment Plan kamu tadi, kamu bisa mulai dari join OCBC NISP sekarang",
@@ -983,6 +990,13 @@
         "Step": "contactUser_AfterReportBelumNasabah",
         "Index": 6,
         "Dialog": "Untuk mulai lagi dari menu utama, silakan ketik 'menu' ya",
+        "Action": "",
+        "Map": ""
+    }, 
+    {
+        "Step": "contactUser_AfterReportBelumNasabah",
+        "Index": 7,
+        "Dialog": "https://onemobile.onelink.me/JAr5/5bdbd952",
         "Action": "",
         "Map": ""
     }, 
@@ -1033,7 +1047,7 @@
         "Index": 2,
         "Dialog": "Tinggal kamu aja yang komit dan konsisten investasi tiap bulan.",
         "Action": "QR",
-        "Map": "Oke!Aku siap!,aku siap"
+        "Map": "Oke! Aku siap!,aku siap"
     }, 
     {
         "Step": "belajarBerinvestasi_pertanyaanUser4",

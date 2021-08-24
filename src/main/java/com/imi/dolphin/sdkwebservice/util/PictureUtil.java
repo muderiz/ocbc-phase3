@@ -163,7 +163,8 @@ public class PictureUtil {
         }
 
         try {
-            URL input = new URL(urlimage);
+//            URL input = new URL(urlimage);
+            File input = new File(urlimage);
 
 //        BufferedImage img = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
             BufferedImage img = ImageIO.read(input);

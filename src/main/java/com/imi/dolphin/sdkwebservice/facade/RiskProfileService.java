@@ -79,6 +79,14 @@ public class RiskProfileService {
     private String bubble = "";
     private String bubble2 = "";
 
+    /**
+     * Digunakan Untuk menampilan output Response Bot
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult mengirimkan json dengan format class
+     * extensionResult
+     */
     public ExtensionResult riskProfile_entitasStatusInvestasi(ExtensionRequest extensionRequest) {
         log.debug("riskProfile_entitasStatusInvestasi() extension request: {}", extensionRequest);
         Map<String, String> output = new HashMap<>();
@@ -94,6 +102,14 @@ public class RiskProfileService {
         return extensionResult;
     }
 
+    /**
+     * Digunakan Untuk melakukan validasi terhadap inputan user
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult mengirimkan json dengan format class
+     * extensionResult
+     */
     public ExtensionResult riskProfile_validasiStatusInvestasi(ExtensionRequest extensionRequest) {
         log.debug("riskProfile_validasiStatusInvestasi() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
         ExtensionResult extensionResult = new ExtensionResult();
@@ -125,6 +141,11 @@ public class RiskProfileService {
         return extensionResult;
     }
 
+    /**
+     * Untuk melakukan set data pada AdditionalField
+     *
+     * @param extensionRequest berisi model yang akan di set
+     */
     private void setData(ExtensionRequest extensionRequest) {
         log.debug("setDataMulaiBerinvestasi() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
 
@@ -217,6 +238,14 @@ public class RiskProfileService {
 //        return extensionResult;
     }
 
+    /**
+     * Digunakan Untuk melakukan validasi terhadap inputan user
+     *
+     * @param extensionRequest digunakan untuk memanggil data-data dari response
+     * user yang sudah diolah oleh bot
+     * @return extensionResult mengirimkan json dengan format class
+     * extensionResult
+     */
     public ExtensionResult riskProfile_validasiProfileResiko(ExtensionRequest extensionRequest) {
         log.debug("riskProfile_validasiProfileResiko() extension request: {}", new Gson().toJson(extensionRequest, ExtensionRequest.class));
         ExtensionResult extensionResult = new ExtensionResult();
